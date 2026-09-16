@@ -1,0 +1,72 @@
+{
+  "asset_structure_version": "3.0",
+  "files": {
+    "assets/2fg14/onrobot_2fg14.usda": "260ba7eccb9d63fd09331e730f1dda95ba874b493c654f5c718cd7ca2a872b47",
+    "assets/2fg14/payloads/Physics/mujoco.usda": "47c3c89baeca398af80190cc13d000baaa848b2c18c34f3d28984d70894bf7b8",
+    "assets/2fg14/payloads/Physics/physics.usda": "2d9bea1f36b62c92b3bb67f429b292815e2428073957b7d4651db842b62a0636",
+    "assets/2fg14/payloads/Physics/physx.usda": "405a53d87fbb7c9ead3abdda6bf27866ba8b61a516cedb00b46c87d4a3d0edea",
+    "assets/2fg14/payloads/base.usda": "035a3bb249f073d9a17a2c1c2d4723bf204879e92f79d6bc6e86b959221ac929",
+    "assets/2fg14/payloads/geometries.usd": "77f13f5c7c9b8aa808eecb28e28df947ff18d49a14103ad088ea871f80d898b2",
+    "assets/2fg14/payloads/instances.usda": "03eb72672e0c615dfead2dcd1c71ee7f72f913ade15287a10b46cf44bf136863",
+    "assets/2fg14/payloads/materials.usda": "1b42727fb22549a0ac0786fbfbeec50c4e848513e284e9c7a815fded82cf53d3",
+    "assets/2fg14/payloads/robot.usda": "a320d51710048b31c052394e6bda9594dfb22ffa42f271dceaa4a9b975fdce9f",
+    "assets/2fg7/onrobot_2fg7.usda": "86e01d468982a2d6be855395844baf8ce0b2723731e541c9d23b1279d6d80a1f",
+    "assets/2fg7/payloads/Physics/mujoco.usda": "db2d46d42ab3e671497f2119902286e4f7dc26099bb0e1dbcb88109f6d653787",
+    "assets/2fg7/payloads/Physics/physics.usda": "291932ea3a153c40aabc6aa831c82c2392f0dfdbb3e40e126afb345bb201d9e9",
+    "assets/2fg7/payloads/Physics/physx.usda": "f00deaa3d254589e78f37bd4c4395030b27b8e0d47a8d03915ceb8b53bfb584e",
+    "assets/2fg7/payloads/base.usda": "d06871507bdc8cd10951c745689d55e99113206e2d0114e4d1c1a44ad938aa08",
+    "assets/2fg7/payloads/geometries.usd": "878a519ed7e0fee709f8243d6cb859d7b1ace36e7c0be6b14eb6baa2fabd5720",
+    "assets/2fg7/payloads/instances.usda": "57ca88fb2d3f54ba6c36c49f0db720f03c2f615af38b528a6f01834c10df1a10",
+    "assets/2fg7/payloads/materials.usda": "ee6ace7679b88e571337e30b9129e5f8f8d7b1a9b5625a632aad76ff51c5749c",
+    "assets/2fg7/payloads/robot.usda": "eed1cb26139dd18aa6880e850e4845038fe49253cc0657ea8b473e64be237de2",
+    "assets/rg2/onrobot_rg2.usda": "958d56d8499becaefba36e0f9f4b753d608e0735999e4337abf064c4dce1457c",
+    "assets/rg2/payloads/Physics/physics.usda": "cf9d3681cba6b52a90f30dd44ba35bdb326a54ea5fe3a4b6542081abbd701bba",
+    "assets/rg2/payloads/Physics/physx.usda": "16f860a6d2124cbd8d3cb1c6c47dedddda9433ad3d150f3e9c173a57fb70b0ba",
+    "assets/rg2/payloads/Physics/physx_parallel_grip.usda": "16f860a6d2124cbd8d3cb1c6c47dedddda9433ad3d150f3e9c173a57fb70b0ba",
+    "assets/rg2/payloads/Physics/physx_parallel_grip_tip_contact.usda": "1455381a036c2a741dd45e22a38523803ca2bb5725756e162cfe9d898bb7a607",
+    "assets/rg2/payloads/base.usda": "004df9626003605be29e4f547373590bbcbd863ca1c3acbab4bbfde57fbe3025",
+    "assets/rg2/payloads/geometries.usd": "579ab7c58699ffb120986ea3733399949a64eab7b95a63711fc60a363cf791be",
+    "assets/rg2/payloads/instances.usda": "8fb6d4407d1db48eac822c4ad4805f2e0a33f571a765a5fc3d642beebeb31d44",
+    "assets/rg2/payloads/materials.usda": "8cf124dc7b94fdcc4cc49b223dc84c3f955d69df9181b907e356796fc55bfdde",
+    "assets/rg2/payloads/robot.usda": "158927d81f545908dfa5492479d1a03f162ec39e8b6dba94fa653aa59200ee33",
+    "assets/rg6/onrobot_rg6.usda": "a4a48c818d640d4d800ced27a6184d5e5acce9ccb24051e3c6a95649d87e338a",
+    "assets/rg6/payloads/Physics/mujoco.usda": "129369a26615de7b78f2c142a08e2a3b3e4a1eac2fff90d539178af58f444447",
+    "assets/rg6/payloads/Physics/physics.usda": "e2eb6aee964b7f475f5f52350803aedd96cfcd63f97cea0d32042bd670ef020f",
+    "assets/rg6/payloads/Physics/physx.usda": "697fa017d766b7e77c3108af90c904cd80efc52541c1bcab255d82b6b5676f25",
+    "assets/rg6/payloads/Physics/physx_parallel_grip.usda": "697fa017d766b7e77c3108af90c904cd80efc52541c1bcab255d82b6b5676f25",
+    "assets/rg6/payloads/Physics/physx_parallel_grip_tip_contact.usda": "ddc0b66972802dcd3c95697c08a737d6b6af10a2e50af0517b4f5b8d04c67938",
+    "assets/rg6/payloads/base.usda": "e42a72111686ec847776546a076da704eb3660801124db184b13cb9856d7b5b5",
+    "assets/rg6/payloads/geometries.usd": "05483caeb2ab33cff25bf43c091a8adc3be54303b796b92eafe8f87514ade22c",
+    "assets/rg6/payloads/instances.usda": "5e9f72df840d442d86e1537342795dd214e7694620de80f33e65300b0689427d",
+    "assets/rg6/payloads/materials.usda": "3d22a77973597083502746607996dce5fb9dd7f4cdef9187c4859fdf47d92942",
+    "assets/rg6/payloads/robot.usda": "94647c37fdc5b8436c11e0fce78dc403eadb693ce1083d31363bbc07189558ce"
+  },
+  "models": {
+    "2fg14": {
+      "articulation_root": "/onrobot_2fg14/Physics/root_joint",
+      "default_prim": "/onrobot_2fg14",
+      "driven_joint_path": "/onrobot_2fg14/Physics/finger_stroke",
+      "entrypoint": "assets/2fg14/onrobot_2fg14.usda"
+    },
+    "2fg7": {
+      "articulation_root": "/onrobot_2fg7/Physics/root_joint",
+      "default_prim": "/onrobot_2fg7",
+      "driven_joint_path": "/onrobot_2fg7/Physics/finger_stroke",
+      "entrypoint": "assets/2fg7/onrobot_2fg7.usda"
+    },
+    "rg2": {
+      "articulation_root": "/onrobot_rg2",
+      "default_prim": "/onrobot_rg2",
+      "driven_joint_path": "/onrobot_rg2/Physics/finger_joint",
+      "entrypoint": "assets/rg2/onrobot_rg2.usda"
+    },
+    "rg6": {
+      "articulation_root": "/onrobot_rg6",
+      "default_prim": "/onrobot_rg6",
+      "driven_joint_path": "/onrobot_rg6/Physics/finger_joint",
+      "entrypoint": "assets/rg6/onrobot_rg6.usda"
+    }
+  },
+  "runtime": "Isaac Sim 6.0.1",
+  "schema_version": 1
+}

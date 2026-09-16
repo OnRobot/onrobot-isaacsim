@@ -1,0 +1,106 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "onrobot_2fg7"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "onrobot_2fg7"
+{
+    over "Physics"
+    {
+        def MjcActuator "finger_stroke_actuator"
+        {
+            uniform double mjc:forceRange:max = 140
+            uniform double mjc:forceRange:min = -140
+            custom rel mjc:target
+            prepend rel mjc:target = </onrobot_2fg7/Physics/finger_stroke>
+        }
+
+        def MjcActuator "left_finger_base_joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 140
+            uniform double mjc:forceRange:min = -140
+            custom rel mjc:target
+            prepend rel mjc:target = </onrobot_2fg7/Physics/left_finger_base_joint>
+        }
+
+        over "root_joint"
+        {
+        }
+
+        over "finger_stroke" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "right_fingertip_joint"
+        {
+        }
+
+        over "left_finger_base_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "left_fingertip_joint"
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_link"
+        {
+            over "right_finger_base_link"
+            {
+                over "right_fingertip_link"
+                {
+                    over "silicone_fingertip_link"
+                    {
+                    }
+                }
+
+                over "finger_base_link"
+                {
+                }
+            }
+
+            over "left_finger_base_link"
+            {
+                over "left_fingertip_link"
+                {
+                    over "silicone_fingertip_link"
+                    {
+                    }
+                }
+
+                over "finger_base_link"
+                {
+                }
+            }
+
+            over "base_link"
+            {
+            }
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}
+

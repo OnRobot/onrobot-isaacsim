@@ -1,0 +1,222 @@
+#usda 1.0
+(
+    customLayerData = { string creator = "OnRobot RG2 PhysX Asset Structure 3.0" }
+    defaultPrim = "onrobot_rg2"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "onrobot_rg2" (
+    prepend apiSchemas = ["IsaacRobotAPI"]
+)
+{
+    prepend rel isaac:physics:robotJoints = [
+        </onrobot_rg2/Physics/root_joint>,
+        </onrobot_rg2/Physics/body_joint>,
+        </onrobot_rg2/Physics/finger_joint>,
+        </onrobot_rg2/Physics/right_finger_cover_arm_joint>,
+        </onrobot_rg2/Physics/right_finger_cover_joint>,
+        </onrobot_rg2/Physics/right_finger_base_joint>,
+        </onrobot_rg2/Physics/right_finger_tip_joint>,
+        </onrobot_rg2/Physics/left_outer_proximal_finger_joint>,
+        </onrobot_rg2/Physics/left_finger_cover_arm_joint>,
+        </onrobot_rg2/Physics/left_finger_cover_joint>,
+        </onrobot_rg2/Physics/left_finger_base_joint>,
+        </onrobot_rg2/Physics/left_finger_tip_joint>,
+        </onrobot_rg2/Physics/right_inner_proximal_finger_joint>,
+        </onrobot_rg2/Physics/left_inner_proximal_finger_joint>
+    ]
+    prepend rel isaac:physics:robotLinks = [
+        </onrobot_rg2/Geometry/base_link>,
+        </onrobot_rg2/Geometry/body_link>,
+        </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+        </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+        </onrobot_rg2/Geometry/right_finger_cover_link>,
+        </onrobot_rg2/Geometry/right_finger_base_link>,
+        </onrobot_rg2/Geometry/right_finger_tip_link>,
+        </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+        </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+        </onrobot_rg2/Geometry/left_finger_cover_link>,
+        </onrobot_rg2/Geometry/left_finger_base_link>,
+        </onrobot_rg2/Geometry/left_finger_tip_link>,
+        </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+        </onrobot_rg2/Geometry/left_inner_proximal_finger_link>
+    ]
+    token isaac:robotType = "End Effector"
+
+    over "Geometry"
+    {
+        over "base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "body_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_outer_proximal_finger_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_finger_cover_arm_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_finger_cover_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_finger_base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_finger_tip_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_outer_proximal_finger_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_finger_cover_arm_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_finger_cover_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_finger_base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_finger_tip_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_inner_proximal_finger_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_inner_proximal_finger_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+    }
+    over "Physics"
+    {
+        over "root_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "body_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "finger_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "right_finger_cover_arm_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "right_finger_cover_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "right_finger_base_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "right_finger_tip_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_outer_proximal_finger_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_finger_cover_arm_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_finger_cover_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_finger_base_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_finger_tip_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "right_inner_proximal_finger_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_inner_proximal_finger_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+    }
+}

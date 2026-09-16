@@ -1,0 +1,51 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "OnRobot 2FG14 PhysX Asset Structure 3.0"
+    }
+    defaultPrim = "onrobot_2fg14"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "onrobot_2fg14" (
+    prepend references = @./payloads/base.usda@
+    variants = {
+        string Physics = "physx"
+    }
+    append variantSets = "Physics"
+)
+{
+    over "Physics"
+    {
+        over "finger_stroke"
+        {
+            float drive:linear:physics:damping = 900
+            float drive:linear:physics:stiffness = 40000
+            float drive:linear:physics:targetPosition = 0
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.025
+        }
+    }
+    variantSet "Physics" = {
+        "mujoco" (
+            prepend payload = @./payloads/Physics/mujoco.usda@
+        ) {
+
+        }
+        "none" {
+
+        }
+        "physics" (
+            prepend payload = @./payloads/Physics/physics.usda@
+        ) {
+
+        }
+        "physx" (
+            prepend payload = @./payloads/Physics/physx.usda@
+        ) {
+
+        }
+    }
+}

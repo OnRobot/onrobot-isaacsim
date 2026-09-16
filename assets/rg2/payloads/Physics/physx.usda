@@ -1,0 +1,158 @@
+#usda 1.0
+(
+    customLayerData = { string creator = "OnRobot RG2 PhysX Asset Structure 3.0" }
+    defaultPrim = "onrobot_rg2"
+    subLayers = [
+        @./physics.usda@
+    ]
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "onrobot_rg2" (
+    prepend apiSchemas = ["PhysxArticulationAPI"]
+)
+{
+    bool physxArticulation:enabledSelfCollisions = 0
+    int physxArticulation:solverPositionIterationCount = 68
+    int physxArticulation:solverVelocityIterationCount = 4
+
+    over "Physics"
+    {
+        over "finger_joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:armature = 0.29435
+            float physxJoint:maxJointVelocity = 67.35
+        }
+
+        over "right_finger_cover_arm_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotZ"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotZ:dampingRatio = 1
+            float physxMimicJoint:rotZ:gearing = 1
+            float physxMimicJoint:rotZ:naturalFrequency = 5000
+            float physxMimicJoint:rotZ:offset = 0
+            rel physxMimicJoint:rotZ:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "right_finger_cover_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotZ"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotZ:dampingRatio = 1
+            float physxMimicJoint:rotZ:gearing = -1
+            float physxMimicJoint:rotZ:naturalFrequency = 5000
+            float physxMimicJoint:rotZ:offset = 0
+            rel physxMimicJoint:rotZ:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "right_finger_base_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotZ"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotZ:dampingRatio = 1
+            float physxMimicJoint:rotZ:gearing = 1
+            float physxMimicJoint:rotZ:naturalFrequency = 5000
+            float physxMimicJoint:rotZ:offset = 0
+            rel physxMimicJoint:rotZ:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "left_outer_proximal_finger_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotZ"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotZ:dampingRatio = 1
+            float physxMimicJoint:rotZ:gearing = -1
+            float physxMimicJoint:rotZ:naturalFrequency = 5000
+            float physxMimicJoint:rotZ:offset = 0
+            rel physxMimicJoint:rotZ:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "left_finger_cover_arm_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotZ"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotZ:dampingRatio = 1
+            float physxMimicJoint:rotZ:gearing = 1
+            float physxMimicJoint:rotZ:naturalFrequency = 5000
+            float physxMimicJoint:rotZ:offset = 0
+            rel physxMimicJoint:rotZ:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "left_finger_cover_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotZ"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotZ:dampingRatio = 1
+            float physxMimicJoint:rotZ:gearing = -1
+            float physxMimicJoint:rotZ:naturalFrequency = 5000
+            float physxMimicJoint:rotZ:offset = 0
+            rel physxMimicJoint:rotZ:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "left_finger_base_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotZ"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotZ:dampingRatio = 1
+            float physxMimicJoint:rotZ:gearing = 1
+            float physxMimicJoint:rotZ:naturalFrequency = 5000
+            float physxMimicJoint:rotZ:offset = 0
+            rel physxMimicJoint:rotZ:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "right_inner_proximal_finger_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotX"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotX:dampingRatio = 1
+            float physxMimicJoint:rotX:gearing = -1
+            float physxMimicJoint:rotX:naturalFrequency = 5000
+            float physxMimicJoint:rotX:offset = 0
+            rel physxMimicJoint:rotX:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+        over "left_inner_proximal_finger_joint" (
+            prepend apiSchemas = ["PhysxJointAPI", "PhysxMimicJointAPI:rotX"]
+        )
+        {
+            bool active = 1
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 100.45
+            float physxMimicJoint:rotX:dampingRatio = 1
+            float physxMimicJoint:rotX:gearing = -1
+            float physxMimicJoint:rotX:naturalFrequency = 5000
+            float physxMimicJoint:rotX:offset = 0
+            rel physxMimicJoint:rotX:referenceJoint = </onrobot_rg2/Physics/finger_joint>
+        }
+
+    }
+}

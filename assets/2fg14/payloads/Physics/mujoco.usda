@@ -1,0 +1,342 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "onrobot_2fg14"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "onrobot_2fg14"
+{
+    over "Physics"
+    {
+        def MjcActuator "finger_stroke_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -150, -5, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 280
+            uniform double mjc:forceRange:min = -280
+            uniform double[] mjc:gainPrm = [150, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </onrobot_2fg14/Physics/finger_stroke>
+        }
+
+        def MjcActuator "left_finger_base_joint_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, -150, -5, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 280
+            uniform double mjc:forceRange:min = -280
+            uniform double[] mjc:gainPrm = [150, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </onrobot_2fg14/Physics/left_finger_base_joint>
+        }
+
+        over "root_joint"
+        {
+        }
+
+        over "finger_stroke" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "right_fingertip_joint"
+        {
+        }
+
+        over "left_finger_base_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "left_fingertip_joint"
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_link"
+        {
+            over "base_link"
+            {
+                over "geo_28"
+                {
+                }
+
+                over "geo_29"
+                {
+                }
+
+                over "geo_19"
+                {
+                }
+
+                over "geo_19_1"
+                {
+                }
+
+                over "geo_20"
+                {
+                }
+
+                over "geo_20_1"
+                {
+                }
+
+                over "geo_0"
+                {
+                }
+
+                over "geo_1"
+                {
+                }
+
+                over "geo_2"
+                {
+                }
+
+                over "geo_3"
+                {
+                }
+
+                over "geo_4"
+                {
+                }
+
+                over "geo_5"
+                {
+                }
+
+                over "geo_6"
+                {
+                }
+
+                over "geo_7"
+                {
+                }
+
+                over "geo_8"
+                {
+                }
+
+                over "geo_9"
+                {
+                }
+
+                over "geo_10"
+                {
+                }
+
+                over "geo_11"
+                {
+                }
+
+                over "geo_12"
+                {
+                }
+
+                over "geo_13"
+                {
+                }
+
+                over "geo_14"
+                {
+                }
+
+                over "geo_15"
+                {
+                }
+
+                over "geo_16"
+                {
+                }
+
+                over "geo_17"
+                {
+                }
+
+                over "geo_18"
+                {
+                }
+
+                over "geo_21"
+                {
+                }
+
+                over "geo_22"
+                {
+                }
+
+                over "geo_23"
+                {
+                }
+
+                over "geo_24"
+                {
+                }
+
+                over "geo_25"
+                {
+                }
+
+                over "geo_26"
+                {
+                }
+
+                over "geo_27"
+                {
+                }
+
+                over "geo_21_1"
+                {
+                }
+
+                over "geo_22_1"
+                {
+                }
+
+                over "geo_23_1"
+                {
+                }
+
+                over "geo_24_1"
+                {
+                }
+
+                over "geo_25_1"
+                {
+                }
+
+                over "geo_26_1"
+                {
+                }
+
+                over "geo_27_1"
+                {
+                }
+            }
+
+            over "base_link_1"
+            {
+            }
+        }
+
+        over "right_fingertip_link"
+        {
+            over "fingertip_link"
+            {
+                over "geo_0"
+                {
+                }
+
+                over "geo_1"
+                {
+                }
+
+                over "geo_1_1"
+                {
+                }
+
+                over "geo_2"
+                {
+                }
+
+                over "geo_2_1"
+                {
+                }
+
+                over "geo_2_2"
+                {
+                }
+
+                over "geo_2_3"
+                {
+                }
+            }
+
+            over "fingertip_link_1"
+            {
+            }
+        }
+
+        over "left_fingertip_link"
+        {
+            over "fingertip_link"
+            {
+                over "geo_0"
+                {
+                }
+
+                over "geo_1"
+                {
+                }
+
+                over "geo_1_1"
+                {
+                }
+
+                over "geo_2"
+                {
+                }
+
+                over "geo_2_1"
+                {
+                }
+
+                over "geo_2_2"
+                {
+                }
+
+                over "geo_2_3"
+                {
+                }
+            }
+
+            over "fingertip_link_1"
+            {
+            }
+        }
+
+        over "right_finger_base_link"
+        {
+            over "finger_base_link"
+            {
+            }
+
+            over "finger_base_link_1"
+            {
+            }
+        }
+
+        over "left_finger_base_link"
+        {
+            over "finger_base_link"
+            {
+            }
+
+            over "finger_base_link_1"
+            {
+            }
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}

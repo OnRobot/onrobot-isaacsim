@@ -1,0 +1,656 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Scope "Instances"
+{
+    def Xform "geo_10_1" (
+        prepend references = @./geometries.usd@</Geometries/geo_10_1>
+    )
+    {
+        over "geo_10_1" (
+            apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexDecomposition"
+            token purpose = "default"
+            token subsetFamily:materialBind:familyType = "nonOverlapping"
+
+            over "Mtl1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl1>
+            }
+
+            over "Mtl10" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl10>
+            }
+
+            over "Mtl11" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl11>
+            }
+
+            over "Mtl12" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl12>
+            }
+
+            over "Mtl14" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl14>
+            }
+
+            over "Mtl2" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl2>
+            }
+
+            over "Mtl4" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl4>
+            }
+
+            over "Mtl5" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl5>
+            }
+
+            over "Mtl6" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl6>
+            }
+
+            over "Mtl7" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl7>
+            }
+
+            over "Mtl8" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl8>
+            }
+
+            over "Mtl9" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtl9>
+            }
+
+            over "Mtla" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtla>
+            }
+
+            over "Mtlb" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/Mtlb>
+            }
+
+            over "texture" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_10_1/VisualMaterials/texture>
+            }
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl1" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl1>
+            )
+            {
+            }
+
+            def Material "Mtl10" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl10>
+            )
+            {
+            }
+
+            def Material "Mtl11" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl11>
+            )
+            {
+            }
+
+            def Material "Mtl12" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl10>
+            )
+            {
+            }
+
+            def Material "Mtl14" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl10>
+            )
+            {
+            }
+
+            def Material "Mtl2" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl1>
+            )
+            {
+            }
+
+            def Material "Mtl4" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+
+            def Material "Mtl5" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl5>
+            )
+            {
+            }
+
+            def Material "Mtl6" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+
+            def Material "Mtl7" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl1>
+            )
+            {
+            }
+
+            def Material "Mtl8" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl8>
+            )
+            {
+            }
+
+            def Material "Mtl9" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl9>
+            )
+            {
+            }
+
+            def Material "Mtla" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl9>
+            )
+            {
+            }
+
+            def Material "Mtlb" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtlb>
+            )
+            {
+            }
+
+            def Material "texture" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl4>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_8_1" (
+        prepend references = @./geometries.usd@</Geometries/geo_8_1>
+    )
+    {
+        over "geo_8_1" (
+            apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexDecomposition"
+            token purpose = "default"
+            token subsetFamily:materialBind:familyType = "nonOverlapping"
+
+            over "Mtl" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_8_1/VisualMaterials/Mtl>
+            }
+
+            over "Mtl1_1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_8_1/VisualMaterials/Mtl1_1>
+            }
+
+            over "Mtl2_1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_8_1/VisualMaterials/Mtl2_1>
+            }
+
+            over "Mtl3" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_8_1/VisualMaterials/Mtl3>
+            }
+
+            over "Mtl4_1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_8_1/VisualMaterials/Mtl4_1>
+            }
+
+            over "texture_1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_8_1/VisualMaterials/texture_1>
+            }
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+
+            def Material "Mtl1_1" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+
+            def Material "Mtl2_1" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl2_1>
+            )
+            {
+            }
+
+            def Material "Mtl3" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl1>
+            )
+            {
+            }
+
+            def Material "Mtl4_1" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl4_1>
+            )
+            {
+            }
+
+            def Material "texture_1" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl4>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "right_outer_proximal_finger_link" (
+        prepend references = @./geometries.usd@</Geometries/right_outer_proximal_finger_link>
+    )
+    {
+        over "right_outer_proximal_finger_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/right_outer_proximal_finger_link/VisualMaterials/body_white>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "body_white" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "right_finger_cover_arm_link" (
+        prepend references = @./geometries.usd@</Geometries/right_finger_cover_arm_link>
+    )
+    {
+        over "right_finger_cover_arm_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/right_finger_cover_arm_link/VisualMaterials/cover_grey>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "cover_grey" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/cover_grey>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "right_finger_cover_link" (
+        prepend references = @./geometries.usd@</Geometries/right_finger_cover_link>
+    )
+    {
+        over "right_finger_cover_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/right_finger_cover_link/VisualMaterials/cover_grey>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "cover_grey" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/cover_grey>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "right_finger_base_link" (
+        prepend references = @./geometries.usd@</Geometries/right_finger_base_link>
+    )
+    {
+        over "right_finger_base_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/right_finger_base_link/VisualMaterials/body_white>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "body_white" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_1_1" (
+        prepend references = @./geometries.usd@</Geometries/geo_1_1>
+    )
+    {
+        over "geo_1_1" (
+            apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexDecomposition"
+            token purpose = "default"
+            token subsetFamily:materialBind:familyType = "nonOverlapping"
+
+            over "Mtl_1" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_1_1/VisualMaterials/Mtl_1>
+            }
+
+            over "texture_2" (
+                apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                custom rel material:binding
+                prepend rel material:binding = </Instances/geo_1_1/VisualMaterials/texture_2>
+            }
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl_1" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl_1>
+            )
+            {
+                color3f inputs:diffuseColor = (0.05087609, 0.05087609, 0.05087609)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.5
+                float inputs:opacity = 1
+            }
+
+            def Material "texture_2" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtlb>
+            )
+            {
+                color3f inputs:diffuseColor = (0.05087609, 0.05087609, 0.05087609)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.5
+                float inputs:opacity = 1
+            }
+        }
+    }
+
+    def Xform "left_outer_proximal_finger_link" (
+        prepend references = @./geometries.usd@</Geometries/left_outer_proximal_finger_link>
+    )
+    {
+        over "left_outer_proximal_finger_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/left_outer_proximal_finger_link/VisualMaterials/body_white>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "body_white" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "left_finger_cover_arm_link" (
+        prepend references = @./geometries.usd@</Geometries/left_finger_cover_arm_link>
+    )
+    {
+        over "left_finger_cover_arm_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/left_finger_cover_arm_link/VisualMaterials/cover_grey>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "cover_grey" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/cover_grey>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "left_finger_cover_link" (
+        prepend references = @./geometries.usd@</Geometries/left_finger_cover_link>
+    )
+    {
+        over "left_finger_cover_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/left_finger_cover_link/VisualMaterials/cover_grey>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "cover_grey" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/cover_grey>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "left_finger_base_link" (
+        prepend references = @./geometries.usd@</Geometries/left_finger_base_link>
+    )
+    {
+        over "left_finger_base_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/left_finger_base_link/VisualMaterials/body_white>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "body_white" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "right_inner_proximal_finger_link" (
+        prepend references = @./geometries.usd@</Geometries/right_inner_proximal_finger_link>
+    )
+    {
+        over "right_inner_proximal_finger_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/right_inner_proximal_finger_link/VisualMaterials/body_white>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "body_white" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "left_inner_proximal_finger_link" (
+        prepend references = @./geometries.usd@</Geometries/left_inner_proximal_finger_link>
+    )
+    {
+        over "left_inner_proximal_finger_link" (
+            apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/left_inner_proximal_finger_link/VisualMaterials/body_white>
+            token physics:approximation = "convexDecomposition"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "body_white" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+}

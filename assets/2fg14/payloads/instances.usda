@@ -1,0 +1,857 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Scope "Instances"
+{
+    def Xform "geo_28" (
+        prepend references = @./geometries.usd@</Geometries/geo_28>
+    )
+    {
+        over "geo_28" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_28/VisualMaterials/Mtl>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_29" (
+        prepend references = @./geometries.usd@</Geometries/geo_29>
+    )
+    {
+        over "geo_29" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_29/VisualMaterials/Mtl2>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl2" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl2>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_19" (
+        prepend references = @./geometries.usd@</Geometries/geo_19>
+    )
+    {
+        over "geo_19" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_19/VisualMaterials/Mtl3>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl3" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl3>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_20" (
+        prepend references = @./geometries.usd@</Geometries/geo_20>
+    )
+    {
+        over "geo_20" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_20/VisualMaterials/Mtl4>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl4" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl4>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_0" (
+        prepend references = @./geometries.usd@</Geometries/geo_0>
+    )
+    {
+        over "geo_0" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_0/VisualMaterials/Mtl5>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl5" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl5>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_1" (
+        prepend references = @./geometries.usd@</Geometries/geo_1>
+    )
+    {
+        over "geo_1" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_1/VisualMaterials/Mtl6>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl6" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl6>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_2" (
+        prepend references = @./geometries.usd@</Geometries/geo_2>
+    )
+    {
+        over "geo_2" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_2/VisualMaterials/Mtl7>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl7" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl7>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_3" (
+        prepend references = @./geometries.usd@</Geometries/geo_3>
+    )
+    {
+        over "geo_3" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_3/VisualMaterials/Mtl8>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl8" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl8>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_4" (
+        prepend references = @./geometries.usd@</Geometries/geo_4>
+    )
+    {
+        over "geo_4" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_4/VisualMaterials/Mtl9>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl9" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl9>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_5" (
+        prepend references = @./geometries.usd@</Geometries/geo_5>
+    )
+    {
+        over "geo_5" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_5/VisualMaterials/Mtla>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtla" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_6" (
+        prepend references = @./geometries.usd@</Geometries/geo_6>
+    )
+    {
+        over "geo_6" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_6/VisualMaterials/Mtlb>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtlb" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtlb>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_7" (
+        prepend references = @./geometries.usd@</Geometries/geo_7>
+    )
+    {
+        over "geo_7" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_7/VisualMaterials/Mtl10>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl10" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl10>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_8" (
+        prepend references = @./geometries.usd@</Geometries/geo_8>
+    )
+    {
+        over "geo_8" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_8/VisualMaterials/Mtl12>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl12" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl12>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_9" (
+        prepend references = @./geometries.usd@</Geometries/geo_9>
+    )
+    {
+        over "geo_9" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_9/VisualMaterials/Mtl11>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl11" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl11>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_10" (
+        prepend references = @./geometries.usd@</Geometries/geo_10>
+    )
+    {
+        over "geo_10" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_10/VisualMaterials/Mtl16>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl16" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl16>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_11" (
+        prepend references = @./geometries.usd@</Geometries/geo_11>
+    )
+    {
+        over "geo_11" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_11/VisualMaterials/Mtl14>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl14" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl14>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_12" (
+        prepend references = @./geometries.usd@</Geometries/geo_12>
+    )
+    {
+        over "geo_12" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_12/VisualMaterials/texture>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "texture" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_13" (
+        prepend references = @./geometries.usd@</Geometries/geo_13>
+    )
+    {
+        over "geo_13" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_13/VisualMaterials/Mtl15>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl15" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl15>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_14" (
+        prepend references = @./geometries.usd@</Geometries/geo_14>
+    )
+    {
+        over "geo_14" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_14/VisualMaterials/Mtl13>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl13" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl7>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_15" (
+        prepend references = @./geometries.usd@</Geometries/geo_15>
+    )
+    {
+        over "geo_15" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_15/VisualMaterials/Mtl17>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl17" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl15>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_16" (
+        prepend references = @./geometries.usd@</Geometries/geo_16>
+    )
+    {
+        over "geo_16" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_16/VisualMaterials/Mtl19>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl19" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl15>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_17" (
+        prepend references = @./geometries.usd@</Geometries/geo_17>
+    )
+    {
+        over "geo_17" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_17/VisualMaterials/Mtl1b>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl1b" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl5>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_18" (
+        prepend references = @./geometries.usd@</Geometries/geo_18>
+    )
+    {
+        over "geo_18" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_18/VisualMaterials/Mtl1b>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl1b" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl5>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_21" (
+        prepend references = @./geometries.usd@</Geometries/geo_21>
+    )
+    {
+        over "geo_21" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_21/VisualMaterials/Mtl20>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl20" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl5>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_22" (
+        prepend references = @./geometries.usd@</Geometries/geo_22>
+    )
+    {
+        over "geo_22" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_22/VisualMaterials/Mtl20>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl20" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl5>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_23" (
+        prepend references = @./geometries.usd@</Geometries/geo_23>
+    )
+    {
+        over "geo_23" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_23/VisualMaterials/Mtl21>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl21" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl21>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_24" (
+        prepend references = @./geometries.usd@</Geometries/geo_24>
+    )
+    {
+        over "geo_24" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_24/VisualMaterials/Mtl21>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl21" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl21>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_25" (
+        prepend references = @./geometries.usd@</Geometries/geo_25>
+    )
+    {
+        over "geo_25" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_25/VisualMaterials/Mtl21>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl21" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl21>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_26" (
+        prepend references = @./geometries.usd@</Geometries/geo_26>
+    )
+    {
+        over "geo_26" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_26/VisualMaterials/Mtl21>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl21" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl21>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_27" (
+        prepend references = @./geometries.usd@</Geometries/geo_27>
+    )
+    {
+        over "geo_27" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_27/VisualMaterials/Mtl21>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl21" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl21>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "base_link_1" (
+        prepend references = @./geometries.usd@</Geometries/base_link_1>
+    )
+    {
+        over "base_link_1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexDecomposition"
+            token purpose = "guide"
+        }
+    }
+
+    def Xform "geo_0_1" (
+        prepend references = @./geometries.usd@</Geometries/geo_0_1>
+    )
+    {
+        over "geo_0_1" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_0_1/VisualMaterials/Mtl_1>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl_1" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_1_1" (
+        prepend references = @./geometries.usd@</Geometries/geo_1_1>
+    )
+    {
+        over "geo_1_1" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_1_1/VisualMaterials/texture_1>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "texture_1" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl15>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "geo_2_1" (
+        prepend references = @./geometries.usd@</Geometries/geo_2_1>
+    )
+    {
+        over "geo_2_1" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/geo_2_1/VisualMaterials/Mtl1>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "Mtl1" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/Mtl1>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "fingertip_link_1" (
+        prepend references = @./geometries.usd@</Geometries/fingertip_link_1>
+    )
+    {
+        over "fingertip_link_1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexDecomposition"
+            bool physics:collisionEnabled = 0
+            token purpose = "guide"
+        }
+    }
+
+    def Xform "finger_base_link" (
+        prepend references = @./geometries.usd@</Geometries/finger_base_link>
+    )
+    {
+        over "finger_base_link" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/finger_base_link/VisualMaterials/material_1>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "material_1" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "finger_base_link_1" (
+        prepend references = @./geometries.usd@</Geometries/finger_base_link>
+    )
+    {
+        over "finger_base_link" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI"]
+        )
+        {
+            token physics:approximation = "convexDecomposition"
+            token purpose = "guide"
+        }
+    }
+
+    def Xform "finger_base_link_2" (
+        prepend references = @./geometries.usd@</Geometries/finger_base_link>
+    )
+    {
+        over "finger_base_link" (
+            apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/finger_base_link_2/VisualMaterials/material_2>
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "material_2" (
+                instanceable = true
+                references = @./materials.usda@</Materials/OnRobotAluminumHousing>
+            )
+            {
+            }
+        }
+    }
+}

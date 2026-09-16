@@ -1,0 +1,97 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "onrobot_2fg7"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "onrobot_2fg7" (
+    prepend apiSchemas = ["IsaacRobotAPI"]
+)
+{
+    prepend rel isaac:physics:robotJoints = [
+        </onrobot_2fg7/Physics/root_joint>,
+        </onrobot_2fg7/Physics/finger_stroke>,
+        </onrobot_2fg7/Physics/left_finger_base_joint>,
+        </onrobot_2fg7/Physics/right_fingertip_joint>,
+        </onrobot_2fg7/Physics/left_fingertip_joint>,
+    ]
+    prepend rel isaac:physics:robotLinks = [
+        </onrobot_2fg7/Geometry/base_link>,
+        </onrobot_2fg7/Geometry/right_finger_base_link>,
+        </onrobot_2fg7/Geometry/right_fingertip_link>,
+        </onrobot_2fg7/Geometry/left_finger_base_link>,
+        </onrobot_2fg7/Geometry/left_fingertip_link>,
+    ]
+    token isaac:robotType = "End Effector"
+
+    over "Geometry"
+    {
+        over "base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_finger_base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "right_fingertip_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_finger_base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+
+        over "left_fingertip_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+        }
+    }
+
+    over "Physics"
+    {
+        over "root_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "finger_stroke" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "right_fingertip_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_finger_base_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "left_fingertip_joint" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+}
