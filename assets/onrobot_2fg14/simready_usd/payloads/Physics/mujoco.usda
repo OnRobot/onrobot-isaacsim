@@ -18,17 +18,19 @@ over "onrobot_2fg14"
     {
         def MjcActuator "finger_stroke_actuator"
         {
-            uniform double[] mjc:biasPrm = [0, -150, -5, 0, 0, 0, 0, 0, 0, 0]
+            uniform double[] mjc:biasPrm = [0, -40000, -900, 0, 0, 0, 0, 0, 0, 0]
             uniform token mjc:biasType = "affine"
-            uniform double mjc:forceRange:max = 280
-            uniform double mjc:forceRange:min = -280
-            uniform double[] mjc:gainPrm = [150, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform double mjc:forceRange:max = 560
+            uniform double mjc:forceRange:min = -560
+            uniform double[] mjc:gainPrm = [40000, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             uniform token mjc:gainType = "fixed"
             custom rel mjc:target
             prepend rel mjc:target = </onrobot_2fg14/Physics/finger_stroke>
         }
 
-        def MjcActuator "left_finger_base_joint_actuator"
+        def MjcActuator "left_finger_base_joint_actuator" (
+            active = false
+        )
         {
             uniform double[] mjc:biasPrm = [0, -150, -5, 0, 0, 0, 0, 0, 0, 0]
             uniform token mjc:biasType = "affine"
@@ -46,8 +48,11 @@ over "onrobot_2fg14"
 
         over "finger_stroke" (
             delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+            prepend apiSchemas = ["NewtonJointAPI"]
         )
         {
+            float newton:armature = 5.0625
+            float newton:velocityLimit = 0.45
         }
 
         over "right_fingertip_joint"
@@ -56,8 +61,11 @@ over "onrobot_2fg14"
 
         over "left_finger_base_joint" (
             delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+            prepend apiSchemas = ["NewtonJointAPI"]
         )
         {
+            float newton:armature = 0
+            float newton:velocityLimit = 0.45
         }
 
         over "left_fingertip_joint"
@@ -340,3 +348,4 @@ over "onrobot_2fg14"
     {
     }
 }
+

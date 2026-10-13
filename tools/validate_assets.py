@@ -67,6 +67,22 @@ def verify_manifest(root):
     return manifest
 
 
+def verify_articulation_roots(stage, expected):
+    """Require one root, including roots inherited from engine schemas."""
+    from pxr import UsdPhysics
+    # NewtonArticulationRootAPI includes PhysicsArticulationRootAPI in Isaac.
+    # Check its token as well, so plain OpenUSD catches misplaced Newton roots
+    # even when that optional schema plugin is not installed.
+    declared = [str(prim.GetPath()) for prim in stage.Traverse()
+                if {'PhysicsArticulationRootAPI', 'NewtonArticulationRootAPI'} &
+                set(prim.GetPrimTypeInfo().GetAppliedAPISchemas())]
+    composed = [str(prim.GetPath()) for prim in stage.Traverse()
+                if prim.HasAPI(UsdPhysics.ArticulationRootAPI)]
+    if declared != [expected] or composed != [expected]:
+        raise ValueError(f'unexpected articulation roots: declared={declared}, composed={composed}')
+    return composed
+
+
 def validate(root, *, manifest_only=False):
     root = Path(root).resolve()
     manifest = verify_manifest(root)
@@ -92,16 +108,7 @@ def validate(root, *, manifest_only=False):
             raise ValueError(f'{model}: unexpected default prim')
         if UsdGeom.GetStageMetersPerUnit(stage) != 1.0:
             raise ValueError(f'{model}: expected metre units')
-        # In Isaac 6, NewtonArticulationRootAPI includes the USD root API as
-        # a built-in schema. Count directly applied roots for ownership, and
-        # report the composed roots too instead of hiding that distinction.
-        roots = [str(prim.GetPath()) for prim in stage.Traverse()
-                 if 'PhysicsArticulationRootAPI' in
-                 prim.GetPrimTypeInfo().GetAppliedAPISchemas()]
-        composed_roots = [str(prim.GetPath()) for prim in stage.Traverse()
-                          if prim.HasAPI(UsdPhysics.ArticulationRootAPI)]
-        if roots != [info['articulation_root']]:
-            raise ValueError(f'{model}: unexpected articulation roots: {roots}')
+        composed_roots = verify_articulation_roots(stage, info['articulation_root'])
         joint = stage.GetPrimAtPath(info['driven_joint_path'])
         if not joint or not joint.IsA(UsdPhysics.Joint):
             raise ValueError(f'{model}: driven joint is missing')
@@ -111,7 +118,7 @@ def validate(root, *, manifest_only=False):
             if not joint.IsA(joint_type):
                 raise ValueError(f'{model}: driven joint type differs from its coordinate units')
         report['models'][model] = {'default_prim': info['default_prim'],
-                                   'articulation_root': roots[0],
+                                   'articulation_root': composed_roots[0],
                                    'composed_articulation_roots': composed_roots,
                                    'layers': len(layers)}
     return report

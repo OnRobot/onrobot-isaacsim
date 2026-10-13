@@ -14,184 +14,6 @@
             string source_file = "assets/onrobot_rg6/simready_usd/onrobot_rg6.usda"
             string source_manifest_sha256 = "62cbb6ff62d264ce967bf35b8b16c1ba504d1a8ed4b0d4af2fa48f4dc0494812"
             string usd_date_generated = "2026-10-07"
-            dictionary validation = {
-                string profile = "Robot-Gripper"
-                string profile_version = "2.1.0"
-                dictionary validated_features = {
-                    dictionary "2026-10-07" = {
-                        dictionary FET_000_MUJOCO = {
-                            string dependencies = "[{'FET_000_STANDARD': {'version': '0.1.0'}}]"
-                            string "optional requirements" = "['com.nvidia.simready.RV.007']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_000_NEWTON = {
-                            string dependencies = "[{'FET_000_STANDARD': {'version': '0.1.0'}}]"
-                            string "optional requirements" = "['com.nvidia.simready.RV.004']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_000_PHYSX = {
-                            string dependencies = "[{'FET_000_STANDARD': {'version': '0.1.0'}}]"
-                            string "optional requirements" = "['com.nvidia.simready.RV.001']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_000_STANDARD = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_001_STANDARD = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "1.0.1"
-                        }
-                        dictionary FET_003_MUJOCO = {
-                            string dependencies = "[]"
-                            string "optional requirements" = "['com.nvidia.simready.MUJOCO.COL.001']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_003_NEWTON = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_003_PHYSX = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.4.0"
-                        }
-                        dictionary FET_003_STANDARD = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.2.0"
-                        }
-                        dictionary FET_004_MUJOCO = {
-                            string dependencies = "[{'FET_003_MUJOCO': {'version': '0.1.0'}}]"
-                            string "optional requirements" = "['com.nvidia.simready.MUJOCO.COL.001']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_004_NEWTON = {
-                            string dependencies = "[{'FET_003_NEWTON': {'version': '0.1.0'}}]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_004_PHYSX = {
-                            string dependencies = "[{'FET_003_PHYSX': {'version': '0.4.0'}}]"
-                            bool passed = 1
-                            string version = "0.4.0"
-                        }
-                        dictionary FET_004_ROBOT_MUJOCO = {
-                            string dependencies = "[]"
-                            string "optional requirements" = "['com.nvidia.simready.MUJOCO.COL.001']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_004_ROBOT_NEWTON = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_004_ROBOT_PHYSX = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_004_STANDARD = {
-                            string dependencies = "[{'FET_003_STANDARD': {'version': '0.2.0'}}]"
-                            bool passed = 1
-                            string version = "0.2.0"
-                        }
-                        dictionary FET_021_ISAAC = {
-                            string dependencies = "[]"
-                            string "optional requirements" = "['com.nvidia.simready.RC.001', 'com.nvidia.simready.RC.009']"
-                            bool passed = 0
-                            string version = "0.2.0"
-                        }
-                        dictionary FET_022_ISAAC = {
-                            string dependencies = "[{'FET_022_PHYSX': {'version': '0.2.0'}}]"
-                            bool passed = 1
-                            string version = "0.2.0"
-                        }
-                        dictionary FET_022_MUJOCO = {
-                            string dependencies = "[{'FET_004_ROBOT_MUJOCO': {'version': '0.1.0'}}]"
-                            string "optional requirements" = "['com.nvidia.simready.MUJOCO.COL.001', 'com.nvidia.simready.MUJOCO.DJ.001']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_022_NEWTON = {
-                            string dependencies = "[{'FET_004_ROBOT_NEWTON': {'version': '0.1.0'}}]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_022_PHYSX = {
-                            string dependencies = "[{'FET_004_PHYSX': {'version': '0.4.0'}}]"
-                            bool passed = 1
-                            string version = "0.2.0"
-                        }
-                        dictionary FET_022_STANDARD = {
-                            string dependencies = "[{'FET_004_STANDARD': {'version': '0.2.0'}}]"
-                            bool passed = 1
-                            string version = "0.2.0"
-                        }
-                        dictionary FET_024_MUJOCO = {
-                            string dependencies = "[{'FET_024_STANDARD': {'version': '0.1.0'}}]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_024_NEWTON = {
-                            string dependencies = "[{'FET_024_STANDARD': {'version': '0.1.0'}}]"
-                            string "optional requirements" = "['com.nvidia.simready.NEWTON.BA.001']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_024_PHYSX = {
-                            string dependencies = "[{'FET_024_STANDARD': {'version': '0.1.0'}}]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_024_STANDARD = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_028_ISAAC = {
-                            string dependencies = "[{'FET_028_STANDARD': {'version': '0.1.0'}}, {'FET_022_ISAAC': {'version': '0.1.0'}}]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_028_MUJOCO = {
-                            string dependencies = "[{'FET_028_STANDARD': {'version': '0.1.0'}}, {'FET_022_MUJOCO': {'version': '0.1.0'}}]"
-                            string "optional requirements" = "['com.nvidia.simready.MUJOCO.COL.001', 'com.nvidia.simready.MUJOCO.DJ.001']"
-                            bool passed = 0
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_028_STANDARD = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_031_STANDARD = {
-                            string dependencies = "[]"
-                            bool passed = 1
-                            string version = "0.1.0"
-                        }
-                        dictionary FET_033_STANDARD = {
-                            string dependencies = "[{'FET_031_STANDARD': {'version': '0.1.0'}}]"
-                            bool passed = 1
-                            string version = "0.3.0"
-                        }
-                        dictionary FET_100_ISAAC = {
-                            string dependencies = "[{'FET_003_PHYSX': {'version': '0.4.0'}}]"
-                            bool passed = 1
-                            string version = "0.3.0"
-                        }
-                    }
-                }
-            }
         }
         string asset_name = "onrobot_rg6"
         string asset_type = "gripper"
@@ -209,8 +31,10 @@ def Xform "onrobot_rg6" (
     kind = "component"
     prepend references = @./payloads/base.usda@
     variants = {
+        string Newton = "Disabled"
         string Physics = "physx_parallel_grip"
     }
+    prepend variantSets = "Newton"
     append variantSets = "Physics"
 )
 {
@@ -305,6 +129,37 @@ def Xform "onrobot_rg6" (
         "physx_parallel_grip_tip_contact" (
             prepend payload = @./payloads/Physics/physx_parallel_grip_tip_contact.usda@
         ) {
+
+        }
+    }
+    variantSet "Newton" = {
+        "Disabled" {
+
+        }
+        "Enabled" {
+            over "Physics"
+            {
+                over "root_joint"
+                {
+                    rel physics:body0 = None
+                }
+            }
+
+            over "Geometry"
+            {
+                over "base_link"
+                {
+                    over "base_link_1" (
+                        instanceable = false
+                    )
+                    {
+                        over "base_link_1"
+                        {
+                            uniform token physics:approximation = "convexHull"
+                        }
+                    }
+                }
+            }
 
         }
     }

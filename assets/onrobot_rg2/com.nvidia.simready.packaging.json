@@ -1,6 +1,31 @@
 {
   "format_version": "1.0",
-  "package_id": "simready.hf.onrobot.simready-grippers.onrobot_rg2.2026.10.07_01",
+  "package_id": "simready.hf.onrobot.simready-grippers.onrobot_rg2.2026.10.12_01",
   "license": "BSD-3-Clause",
-  "metadata": []
+  "metadata": [
+    {
+      "name": "com.nvidia.simready.conformance.Package-Candidate@1.0.0.json",
+      "hash": {
+        "sha256": "bcbf11afedb8a260affe71b122c2a971871fe3667d8b2f67c853ac45c6998494"
+      }
+    },
+    {
+      "name": "com.nvidia.simready.packaging.bom.json",
+      "hash": {
+        "sha256": "e1eca16e6c5622261603588d6122e318375783164477ed22fd3af2de409b62e6"
+      }
+    },
+    {
+      "name": "com.nvidia.simready.root_usds.json",
+      "hash": {
+        "sha256": "bae087bce1c2939f2b63307c4888e409e08847156dd99852996480710f253757"
+      }
+    }
+  ],
+  "content_hash": {
+    "sha256": "a8c6ca6399257ab07f87ceb592c566dc6875d7cc1ed48ce52023a2af68e190f2"
+  },
+  "package_hash": {
+    "sha256": "e9102f1c69ab2e023f2856246f28c57a50ed1ac289b6a19998d06cb64a87d7e0"
+  }
 }

@@ -17,31 +17,49 @@ over "onrobot_2fg7"
             prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
         )
         {
+            point3f physics:centerOfMass = (-0.0002500683, -0.00012024929, 0.060492408)
+            float3 physics:diagonalInertia = (0.00079591415, 0.0009697723, 0.0010568612)
             rel physics:filteredPairs = [
                 </onrobot_2fg7/Geometry/right_finger_base_link>,
                 </onrobot_2fg7/Geometry/right_fingertip_link>,
                 </onrobot_2fg7/Geometry/left_finger_base_link>,
-                </onrobot_2fg7/Geometry/left_fingertip_link>
+                </onrobot_2fg7/Geometry/left_fingertip_link>,
             ]
-            point3f physics:centerOfMass = (-0.0002500683, -0.00012024929, 0.060492408)
-            float3 physics:diagonalInertia = (0.00079591415, 0.0009697723, 0.0010568612)
             float physics:mass = 1.0136738
             quatf physics:principalAxes = (0.70802987, -0.70618117, -0.0010787388, 0.00082372787)
+
+            over "base_link"
+            {
+                over "geo_39_1_1" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
         }
 
         over "right_finger_base_link" (
             prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
         )
         {
+            point3f physics:centerOfMass = (-0.005503283, -0.004471855, -0.009706983)
+            float3 physics:diagonalInertia = (4.317458e-7, 0.0000023808186, 0.0000027380563)
             rel physics:filteredPairs = [
                 </onrobot_2fg7/Geometry/right_fingertip_link>,
                 </onrobot_2fg7/Geometry/left_finger_base_link>,
-                </onrobot_2fg7/Geometry/left_fingertip_link>
+                </onrobot_2fg7/Geometry/left_fingertip_link>,
             ]
-            point3f physics:centerOfMass = (-0.005503283, -0.004471855, -0.009706983)
-            float3 physics:diagonalInertia = (4.317458e-7, 0.0000023808186, 0.0000027380563)
             float physics:mass = 0.008929251
             quatf physics:principalAxes = (0.7298252, 0.15736105, 0.6646323, -0.029266547)
+
+            over "finger_base_link"
+            {
+                over "finger_base_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
         }
 
         over "right_fingertip_link" (
@@ -49,26 +67,40 @@ over "onrobot_2fg7"
         )
         {
             rel material:binding:physics = </onrobot_2fg7/Physics/fingertip_physics_material>
-            rel physics:filteredPairs = [
-                </onrobot_2fg7/Geometry/left_finger_base_link>
-            ]
             point3f physics:centerOfMass = (0.018361593, -0.000002116404, 0.005866226)
             float3 physics:diagonalInertia = (0.0000026813075, 0.00000584746, 0.0000076167835)
+            rel physics:filteredPairs = </onrobot_2fg7/Geometry/left_finger_base_link>
             float physics:mass = 0.032804266
             quatf physics:principalAxes = (-0.0016119543, 0.99602914, -0.00010576829, 0.08901339)
+
+            over "silicone_fingertip_link"
+            {
+                over "geo_1_1_1" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
         }
 
         over "left_finger_base_link" (
             prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
         )
         {
-            rel physics:filteredPairs = [
-                </onrobot_2fg7/Geometry/left_fingertip_link>
-            ]
             point3f physics:centerOfMass = (0, 0, 0)
             float3 physics:diagonalInertia = (4.317458e-7, 0.0000023808186, 0.0000027380563)
+            rel physics:filteredPairs = </onrobot_2fg7/Geometry/left_fingertip_link>
             float physics:mass = 0.008929251
             quatf physics:principalAxes = (0.7298252, 0.15736105, 0.6646323, -0.029266547)
+
+            over "finger_base_link"
+            {
+                over "finger_base_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
         }
 
         over "left_fingertip_link" (
@@ -80,6 +112,15 @@ over "onrobot_2fg7"
             float3 physics:diagonalInertia = (0.0000026813075, 0.00000584746, 0.0000076167835)
             float physics:mass = 0.032804266
             quatf physics:principalAxes = (-0.0016119543, 0.99602914, -0.00010576829, 0.08901339)
+
+            over "silicone_fingertip_link"
+            {
+                over "geo_1_1_1" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
         }
     }
 
@@ -90,8 +131,8 @@ over "onrobot_2fg7"
         )
         {
             float physics:dynamicFriction = 0.5
-            float physics:staticFriction = 0.6
             float physics:restitution = 0
+            float physics:staticFriction = 0.6
             token physxMaterial:frictionCombineMode = "average"
         }
 
@@ -120,9 +161,10 @@ over "onrobot_2fg7"
         }
 
         def PhysicsPrismaticJoint "left_finger_base_joint" (
-            prepend apiSchemas = ["PhysicsJointStateAPI:linear"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:linear", "NewtonMimicAPI"]
         )
         {
+            rel newton:mimicJoint = </onrobot_2fg7/Physics/finger_stroke>
             uniform token physics:axis = "Z"
             custom rel physics:body0
             prepend rel physics:body0 = </onrobot_2fg7/Geometry/base_link>
@@ -141,7 +183,7 @@ over "onrobot_2fg7"
         }
 
         def PhysicsFixedJoint "root_joint" (
-            prepend apiSchemas = ["PhysicsArticulationRootAPI"]
+            prepend apiSchemas = ["PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
         )
         {
             rel physics:body0
@@ -178,3 +220,4 @@ over "onrobot_2fg7"
         }
     }
 }
+

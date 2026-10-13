@@ -1,0 +1,110 @@
+{
+  "format_version": "1.0",
+  "items": [
+    {
+      "relative_path": "simready_usd/.thumbs/256x256/onrobot_rg6.usda.png",
+      "size": 63002,
+      "hash": {
+        "sha256-flat-1mb": "51d55c967537e8b9515fbb8ad636242f94b56ab4cc43b88a0119cb63664e7f76",
+        "sha256": "940d2958247d3b2f3f879eb348012a91e8103d1ae6f6ff6faea0279672942e9f"
+      }
+    },
+    {
+      "relative_path": "simready_usd/LICENSE.txt",
+      "size": 1519,
+      "hash": {
+        "sha256-flat-1mb": "3d14dea7ab7c09adbf366558d33aaabb7dbfae65df4831034758e45318e00546",
+        "sha256": "0b7413ea1cc62c0e65ef63213eceeb629630d53b749773e72a1cc9cefbd11b67"
+      }
+    },
+    {
+      "relative_path": "simready_usd/onrobot_rg6.usda",
+      "size": 4312,
+      "hash": {
+        "sha256-flat-1mb": "e3926d96aa255313a6d5e1e56814a3d5773e8e89278892b020bb49d4ca175901",
+        "sha256": "bf8aedf914ec10a60649c47f8edd465f0a47338f88d6f57e8e5321a0f946f2ff"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Physics/mujoco.usda",
+      "size": 13000,
+      "hash": {
+        "sha256-flat-1mb": "bca2b9af745b1855669d95fb84647076fcf5a669e98fc6b4652b8846990f7ae0",
+        "sha256": "129369a26615de7b78f2c142a08e2a3b3e4a1eac2fff90d539178af58f444447"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Physics/physics.usda",
+      "size": 28743,
+      "hash": {
+        "sha256-flat-1mb": "893b958dc074df1fde9313aceb1f6c7ca05be364e78a3bf73320dd43313445da",
+        "sha256": "e2eb6aee964b7f475f5f52350803aedd96cfcd63f97cea0d32042bd670ef020f"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Physics/physx.usda",
+      "size": 4572,
+      "hash": {
+        "sha256-flat-1mb": "574cd0c97f80c44c46da194d2af8a2a7cb8eb23b654f71f491a2deb48b335937",
+        "sha256": "697fa017d766b7e77c3108af90c904cd80efc52541c1bcab255d82b6b5676f25"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Physics/physx_parallel_grip.usda",
+      "size": 4572,
+      "hash": {
+        "sha256-flat-1mb": "574cd0c97f80c44c46da194d2af8a2a7cb8eb23b654f71f491a2deb48b335937",
+        "sha256": "697fa017d766b7e77c3108af90c904cd80efc52541c1bcab255d82b6b5676f25"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/Physics/physx_parallel_grip_tip_contact.usda",
+      "size": 4572,
+      "hash": {
+        "sha256-flat-1mb": "7d10452ca6e38b16ffc0ea5e275d791290c95894d94e55bd2b8b9a63a6a5ff18",
+        "sha256": "ddc0b66972802dcd3c95697c08a737d6b6af10a2e50af0517b4f5b8d04c67938"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/base.usda",
+      "size": 49275,
+      "hash": {
+        "sha256-flat-1mb": "d812ab0909df022d5e3398656a9d846b70000102f2a048a7ebb3ced1b741acd0",
+        "sha256": "e42a72111686ec847776546a076da704eb3660801124db184b13cb9856d7b5b5"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/geometries.usd",
+      "size": 3899395,
+      "hash": {
+        "sha256-flat-1mb": "13a6aff8dda4bd3260d2d4e18988776867300d8a100e1c49513b3281cc1bedcf",
+        "sha256": "05483caeb2ab33cff25bf43c091a8adc3be54303b796b92eafe8f87514ade22c",
+        "sha256-first1m": "6ae6f7b96ac093aaf6dcbf20d698e542e178fe025c7a4169f53ad31531e10569"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/instances.usda",
+      "size": 29688,
+      "hash": {
+        "sha256-flat-1mb": "8e47b89706062a8e3c53ca69735006e5eda6cb1a948fb77001bd7cd15188d89e",
+        "sha256": "5e9f72df840d442d86e1537342795dd214e7694620de80f33e65300b0689427d"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/materials.usda",
+      "size": 28024,
+      "hash": {
+        "sha256-flat-1mb": "7c1cfde2ce9478c75103b45a6b08806c1e37b10999ef2f139549e21131240a91",
+        "sha256": "3d22a77973597083502746607996dce5fb9dd7f4cdef9187c4859fdf47d92942"
+      }
+    },
+    {
+      "relative_path": "simready_usd/payloads/robot.usda",
+      "size": 4710,
+      "hash": {
+        "sha256-flat-1mb": "6aca715050097d20e6997f70d4d332828ebb330af82f271784047c339873e5a2",
+        "sha256": "94647c37fdc5b8436c11e0fce78dc403eadb693ce1083d31363bbc07189558ce"
+      }
+    }
+  ]
+}
