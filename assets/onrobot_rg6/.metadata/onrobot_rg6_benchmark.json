@@ -1,20 +1,20 @@
 {
   "schema_version": "1.0",
   "asset": "onrobot_rg6",
-  "run_timestamp": "2026-10-12T19:07:09Z",
+  "run_timestamp": "2026-10-14T12:19:18Z",
   "passed": false,
   "results": [
     {
       "test_name": "culling_xz",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 7.524,
+      "duration": 17.179,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 1.586,
+          "value": 3.726,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -22,11 +22,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 99.11,
+          "value": 232.85,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.924,
+          "value": 2.077,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -67,7 +67,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -77,7 +77,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -92,7 +92,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -107,7 +107,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -129,14 +129,14 @@
     {
       "test_name": "culling_xz",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 7.228,
+      "duration": 17.19,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 1.557,
+          "value": 3.784,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -144,11 +144,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 97.3,
+          "value": 236.47,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.935,
+          "value": 1.973,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -189,7 +189,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -199,7 +199,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -214,7 +214,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -229,7 +229,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -251,10 +251,10 @@
     {
       "test_name": "drive_gain_validation",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 5.454,
+      "duration": 12.847,
       "message": "",
       "metrics": {
         "dgv_joints_tested": {
@@ -270,7 +270,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 0.732,
+          "value": 1.756,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -278,11 +278,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 244.16,
+          "value": 585.32,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.353,
+          "value": 0.852,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -315,7 +315,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -325,7 +325,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -340,7 +340,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -355,7 +355,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -377,10 +377,10 @@
     {
       "test_name": "drive_gain_validation",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 37.554,
+      "duration": 72.504,
       "message": "",
       "metrics": {
         "dgv_joints_tested": {
@@ -396,7 +396,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 2.119,
+          "value": 4.439,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -404,11 +404,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 141.27,
+          "value": 295.95,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.633,
+          "value": 1.341,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -437,10 +437,10 @@
     {
       "test_name": "effort_limit",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 15.103,
+      "duration": 37.31,
       "message": "",
       "metrics": {
         "eff_joints_with_candidates": {
@@ -456,7 +456,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 3.793,
+          "value": 7.712,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -464,11 +464,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 158.04,
+          "value": 321.35,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.865,
+          "value": 1.705,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -496,15 +496,81 @@
           "unit": null
         }
       },
-      "kit_logs": []
+      "kit_logs": [
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: Traceback (most recent call last):"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__drawable_changed_fn(texture[\"rp_resource\"], presentation_key)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     vp_api._sync_viewport_api(camera, canvas_size, vp_api.time, view, projection, force_update=True)  # noqa PLW0212"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__projection = self._conform_projection(policy, camera, image_aspect, canvas_aspect, projection)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     gf_camera = camera.GetCamera(self.__time)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                 ^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: AttributeError: 'NoneType' object has no attribute 'GetCamera'"
+        }
+      ]
     },
     {
       "test_name": "effort_limit",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 44.47,
+      "duration": 84.879,
       "message": "",
       "metrics": {
         "eff_joints_with_candidates": {
@@ -520,7 +586,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 3.347,
+          "value": 6.895,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -528,11 +594,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 139.47,
+          "value": 287.29,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.879,
+          "value": 1.817,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -565,10 +631,10 @@
     {
       "test_name": "full_range_sweep",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 32.84,
+      "duration": 74.824,
       "message": "",
       "metrics": {
         "frs_total_dofs": {
@@ -592,7 +658,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 4.972,
+          "value": 9.837,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -600,11 +666,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 165.74,
+          "value": 327.89,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 1.016,
+          "value": 2.047,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -628,15 +694,81 @@
           "unit": null
         }
       },
-      "kit_logs": []
+      "kit_logs": [
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: Traceback (most recent call last):"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__drawable_changed_fn(texture[\"rp_resource\"], presentation_key)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     vp_api._sync_viewport_api(camera, canvas_size, vp_api.time, view, projection, force_update=True)  # noqa PLW0212"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__projection = self._conform_projection(policy, camera, image_aspect, canvas_aspect, projection)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     gf_camera = camera.GetCamera(self.__time)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                 ^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: AttributeError: 'NoneType' object has no attribute 'GetCamera'"
+        }
+      ]
     },
     {
       "test_name": "full_range_sweep",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 64.249,
+      "duration": 131.664,
       "message": "",
       "metrics": {
         "frs_total_dofs": {
@@ -660,7 +792,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 4.111,
+          "value": 8.666,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -668,11 +800,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 137.04,
+          "value": 288.88,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 1.016,
+          "value": 2.027,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -701,10 +833,10 @@
     {
       "test_name": "gripper_close_lift_cube",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 1.254,
+      "duration": 3.574,
       "message": "No FET028 gripper-site authoring found under /World/AssetRoot/Asset.\n\nFIX: Author one Xform prim per grasp point. Most parallel-jaw\ngrippers have ONE site at the grasp center between the finger\npads. Place the prim under a stable parent (the gripper base\nlink) so it translates with the end-effector, and translate it\nto the grasp center in local coordinates.\n\nThe prim must declare:\n  - a discovery marker (spec-canonical socketType OR IsaacSiteAPI)\n  - child BasisCurves 'gripper_forward_axis' (approach direction)\n  - child BasisCurves 'gripper_grip_line'    (between finger pad tips)\n  - custom float 'gripper_maxOpening' (max jaw separation, METERS)\n\nTEMPLATE -- paste under your gripper base prim, edit the\ntranslate / maxOpening / curve points to match your asset:\n\n    def Xform \"gripper_01\" (\n        prepend apiSchemas = [\"IsaacSiteAPI\"]\n    )\n    {\n        # Spec-canonical discovery (preferred, OpenUSD-compatible)\n        token simready:attactment:socketType = \"Gripper\"\n\n        # Isaac runtime metadata (recommended)\n        string isaac:Description = \"Parallel-jaw grasp center\"\n\n        # Max jaw opening between the two pads, in METERS\n        custom float gripper_maxOpening = 0.085\n        # Rated payload in kg (optional, used by FET028 to size\n        # the test object mass)\n        custom float gripper_maxPayload = 5.0\n\n        # Translate to grasp center in local parent coords\n        double3 xformOp:translate = (0, 0, 0.16)\n        uniform token[] xformOpOrder = [\"xformOp:translate\"]\n\n        # Approach direction: from grasp center along close-in path\n        def BasisCurves \"gripper_forward_axis\"\n        {\n            point3f[] points = [(0, 0, 0), (0, 0, 0.05)]\n            int[] curveVertexCounts = [2]\n            uniform token type = \"linear\"\n            uniform token purpose = \"guide\"\n        }\n\n        # Pad-to-pad line: two points at finger pad tip positions\n        # when FULLY OPEN. The segment length should equal\n        # gripper_maxOpening.\n        def BasisCurves \"gripper_grip_line\"\n        {\n            point3f[] points = [(-0.0425, 0, 0.05), (0.0425, 0, 0.05)]\n            int[] curveVertexCounts = [2]\n            uniform token type = \"linear\"\n            uniform token purpose = \"guide\"\n        }\n    }\n\nREFERENCE:\n  Spec:      nv_core/sr_specs/docs/capabilities/physics_bodies/physics_grippers/requirements/\n  Validator: nv_core/sr_specs/docs/capabilities/physics_bodies/physics_grippers/validation.py\n  Example:   sample_content/common_assets/robots_general/Robotiq/2F-85/simready_isaac_usd/Robotiq_2F_85.usda\n             (search for: def Xform \"gripper_01\")",
       "metrics": {},
       "kit_logs": []
@@ -712,10 +844,10 @@
     {
       "test_name": "gripper_close_lift_cube",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "fail",
       "passed": false,
-      "duration": 0.423,
+      "duration": 1.708,
       "message": "FET028 could not resolve the gripper base before physics startup.",
       "metrics": {},
       "kit_logs": []
@@ -723,10 +855,10 @@
     {
       "test_name": "gripper_close_lift_sphere",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 1.25,
+      "duration": 3.837,
       "message": "No FET028 gripper-site authoring found under /World/AssetRoot/Asset.\n\nFIX: Author one Xform prim per grasp point. Most parallel-jaw\ngrippers have ONE site at the grasp center between the finger\npads. Place the prim under a stable parent (the gripper base\nlink) so it translates with the end-effector, and translate it\nto the grasp center in local coordinates.\n\nThe prim must declare:\n  - a discovery marker (spec-canonical socketType OR IsaacSiteAPI)\n  - child BasisCurves 'gripper_forward_axis' (approach direction)\n  - child BasisCurves 'gripper_grip_line'    (between finger pad tips)\n  - custom float 'gripper_maxOpening' (max jaw separation, METERS)\n\nTEMPLATE -- paste under your gripper base prim, edit the\ntranslate / maxOpening / curve points to match your asset:\n\n    def Xform \"gripper_01\" (\n        prepend apiSchemas = [\"IsaacSiteAPI\"]\n    )\n    {\n        # Spec-canonical discovery (preferred, OpenUSD-compatible)\n        token simready:attactment:socketType = \"Gripper\"\n\n        # Isaac runtime metadata (recommended)\n        string isaac:Description = \"Parallel-jaw grasp center\"\n\n        # Max jaw opening between the two pads, in METERS\n        custom float gripper_maxOpening = 0.085\n        # Rated payload in kg (optional, used by FET028 to size\n        # the test object mass)\n        custom float gripper_maxPayload = 5.0\n\n        # Translate to grasp center in local parent coords\n        double3 xformOp:translate = (0, 0, 0.16)\n        uniform token[] xformOpOrder = [\"xformOp:translate\"]\n\n        # Approach direction: from grasp center along close-in path\n        def BasisCurves \"gripper_forward_axis\"\n        {\n            point3f[] points = [(0, 0, 0), (0, 0, 0.05)]\n            int[] curveVertexCounts = [2]\n            uniform token type = \"linear\"\n            uniform token purpose = \"guide\"\n        }\n\n        # Pad-to-pad line: two points at finger pad tip positions\n        # when FULLY OPEN. The segment length should equal\n        # gripper_maxOpening.\n        def BasisCurves \"gripper_grip_line\"\n        {\n            point3f[] points = [(-0.0425, 0, 0.05), (0.0425, 0, 0.05)]\n            int[] curveVertexCounts = [2]\n            uniform token type = \"linear\"\n            uniform token purpose = \"guide\"\n        }\n    }\n\nREFERENCE:\n  Spec:      nv_core/sr_specs/docs/capabilities/physics_bodies/physics_grippers/requirements/\n  Validator: nv_core/sr_specs/docs/capabilities/physics_bodies/physics_grippers/validation.py\n  Example:   sample_content/common_assets/robots_general/Robotiq/2F-85/simready_isaac_usd/Robotiq_2F_85.usda\n             (search for: def Xform \"gripper_01\")",
       "metrics": {},
       "kit_logs": []
@@ -734,10 +866,10 @@
     {
       "test_name": "gripper_close_lift_sphere",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "fail",
       "passed": false,
-      "duration": 0.358,
+      "duration": 2.017,
       "message": "FET028 could not resolve the gripper base before physics startup.",
       "metrics": {},
       "kit_logs": []
@@ -745,10 +877,10 @@
     {
       "test_name": "ground_drop",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 0.076,
+      "duration": 0.188,
       "message": "Asset is world-anchored (FixedJoint to world) -- test not applicable. World-anchored assets cannot fall or slide.",
       "metrics": {
         "ground_drop_skipped": {
@@ -761,10 +893,10 @@
     {
       "test_name": "ground_drop",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 0.079,
+      "duration": 0.232,
       "message": "Asset is world-anchored (FixedJoint to world) -- test not applicable. World-anchored assets cannot fall or slide.",
       "metrics": {
         "ground_drop_skipped": {
@@ -777,10 +909,10 @@
     {
       "test_name": "ik_target_reach",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 1.211,
+      "duration": 3.623,
       "message": "IK Target Reach is not applicable to standalone grippers: their articulation DOFs open and close the fingers but do not provide an arm-like Cartesian workspace for inverse kinematics.",
       "metrics": {},
       "kit_logs": []
@@ -788,10 +920,10 @@
     {
       "test_name": "ik_target_reach",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 26.089,
+      "duration": 44.66,
       "message": "IK Target Reach is not applicable to standalone grippers: their articulation DOFs open and close the fingers but do not provide an arm-like Cartesian workspace for inverse kinematics.",
       "metrics": {},
       "kit_logs": []
@@ -799,10 +931,10 @@
     {
       "test_name": "jacobian_ik",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 1.212,
+      "duration": 3.98,
       "message": "JIK is not applicable to standalone grippers: their articulation DOFs open and close the fingers but do not provide an arm-like Cartesian workspace for inverse kinematics.",
       "metrics": {},
       "kit_logs": []
@@ -810,10 +942,10 @@
     {
       "test_name": "jacobian_ik",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 25.497,
+      "duration": 49.524,
       "message": "JIK is not applicable to standalone grippers: their articulation DOFs open and close the fingers but do not provide an arm-like Cartesian workspace for inverse kinematics.",
       "metrics": {},
       "kit_logs": []
@@ -821,14 +953,14 @@
     {
       "test_name": "joint_movement",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 56.489,
+      "duration": 112.344,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 8.276,
+          "value": 16.694,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -836,11 +968,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 183.91,
+          "value": 370.97,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 1.359,
+          "value": 2.634,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -856,11 +988,11 @@
           "unit": null
         },
         "jm_joint_finger_joint_rot_deg": {
-          "value": 107.722,
+          "value": 180.0,
           "unit": null
         },
         "jm_joint_finger_joint_trans_pct": {
-          "value": 220.09,
+          "value": 272.52,
           "unit": null
         },
         "jm_joint_finger_joint_bbox_m": {
@@ -872,11 +1004,11 @@
           "unit": null
         },
         "jm_joint_right_finger_base_link_rot_deg": {
-          "value": 179.905,
+          "value": 180.0,
           "unit": null
         },
         "jm_joint_right_finger_base_link_trans_pct": {
-          "value": 644.99,
+          "value": 645.03,
           "unit": null
         },
         "jm_joint_right_finger_base_link_bbox_m": {
@@ -884,15 +1016,15 @@
           "unit": null
         },
         "jm_joint_right_finger_base_link_pct_of_travel": {
-          "value": 99.9,
+          "value": 100.0,
           "unit": null
         },
         "jm_joint_right_finger_cover_joint_rot_deg": {
-          "value": 131.566,
+          "value": 179.926,
           "unit": null
         },
         "jm_joint_right_finger_cover_joint_trans_pct": {
-          "value": 565.73,
+          "value": 838.65,
           "unit": null
         },
         "jm_joint_right_finger_cover_joint_bbox_m": {
@@ -900,11 +1032,11 @@
           "unit": null
         },
         "jm_joint_right_finger_cover_joint_pct_of_travel": {
-          "value": 73.1,
+          "value": 100.0,
           "unit": null
         },
         "jm_joint_right_inner_proximal_finger_joint_rot_deg": {
-          "value": 144.736,
+          "value": 144.739,
           "unit": null
         },
         "jm_joint_right_inner_proximal_finger_joint_trans_pct": {
@@ -920,7 +1052,7 @@
           "unit": null
         },
         "jm_joint_left_outer_proximal_finger_joint_rot_deg": {
-          "value": 179.927,
+          "value": 180.0,
           "unit": null
         },
         "jm_joint_left_outer_proximal_finger_joint_trans_pct": {
@@ -936,11 +1068,11 @@
           "unit": null
         },
         "jm_joint_left_finger_base_joint_rot_deg": {
-          "value": 177.852,
+          "value": 180.0,
           "unit": null
         },
         "jm_joint_left_finger_base_joint_trans_pct": {
-          "value": 641.86,
+          "value": 643.08,
           "unit": null
         },
         "jm_joint_left_finger_base_joint_bbox_m": {
@@ -948,15 +1080,15 @@
           "unit": null
         },
         "jm_joint_left_finger_base_joint_pct_of_travel": {
-          "value": 98.8,
+          "value": 100.0,
           "unit": null
         },
         "jm_joint_left_finger_cover_joint_rot_deg": {
-          "value": 173.999,
+          "value": 180.0,
           "unit": null
         },
         "jm_joint_left_finger_cover_joint_trans_pct": {
-          "value": 832.89,
+          "value": 834.34,
           "unit": null
         },
         "jm_joint_left_finger_cover_joint_bbox_m": {
@@ -964,15 +1096,15 @@
           "unit": null
         },
         "jm_joint_left_finger_cover_joint_pct_of_travel": {
-          "value": 96.7,
+          "value": 100.0,
           "unit": null
         },
         "jm_joint_left_inner_proximal_joint_rot_deg": {
-          "value": 144.727,
+          "value": 179.405,
           "unit": null
         },
         "jm_joint_left_inner_proximal_joint_trans_pct": {
-          "value": 299.88,
+          "value": 314.66,
           "unit": null
         },
         "jm_joint_left_inner_proximal_joint_bbox_m": {
@@ -980,7 +1112,7 @@
           "unit": null
         },
         "jm_joint_left_inner_proximal_joint_pct_of_travel": {
-          "value": 80.4,
+          "value": 99.7,
           "unit": null
         },
         "jm_joints_total": {
@@ -1037,7 +1169,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -1047,7 +1179,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -1062,7 +1194,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -1077,7 +1209,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -1099,14 +1231,14 @@
     {
       "test_name": "joint_movement",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 85.857,
+      "duration": 168.788,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 7.3,
+          "value": 15.652,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -1114,11 +1246,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 162.22,
+          "value": 347.83,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 1.333,
+          "value": 2.711,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -1315,7 +1447,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -1325,7 +1457,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -1340,7 +1472,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -1355,7 +1487,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -1377,14 +1509,14 @@
     {
       "test_name": "light_response",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 8.733,
+      "duration": 20.109,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 2.769,
+          "value": 6.476,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -1392,11 +1524,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 92.28,
+          "value": 215.87,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.816,
+          "value": 1.934,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -1412,7 +1544,7 @@
           "unit": null
         },
         "light_response_variation_ratio": {
-          "value": 0.482759,
+          "value": 0.448276,
           "unit": null
         },
         "light_response_blank_ratio": {
@@ -1432,7 +1564,7 @@
           "unit": null
         },
         "light_response_different_pairs": {
-          "value": 14,
+          "value": 13,
           "unit": null
         },
         "light_response_passed": {
@@ -1440,11 +1572,11 @@
           "unit": null
         },
         "light_response_max_pair_change": {
-          "value": 0.780372,
+          "value": 0.78078,
           "unit": null
         },
         "light_response_min_pair_change": {
-          "value": 0.017342,
+          "value": 0.016508,
           "unit": null
         }
       },
@@ -1453,14 +1585,14 @@
     {
       "test_name": "light_response",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 8.712,
+      "duration": 19.019,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 2.792,
+          "value": 6.49,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -1468,11 +1600,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 93.08,
+          "value": 216.32,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.828,
+          "value": 1.67,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -1488,7 +1620,7 @@
           "unit": null
         },
         "light_response_variation_ratio": {
-          "value": 0.517241,
+          "value": 0.551724,
           "unit": null
         },
         "light_response_blank_ratio": {
@@ -1508,7 +1640,7 @@
           "unit": null
         },
         "light_response_different_pairs": {
-          "value": 15,
+          "value": 16,
           "unit": null
         },
         "light_response_passed": {
@@ -1516,11 +1648,11 @@
           "unit": null
         },
         "light_response_max_pair_change": {
-          "value": 0.780921,
+          "value": 0.780353,
           "unit": null
         },
         "light_response_min_pair_change": {
-          "value": 0.014588,
+          "value": 0.01505,
           "unit": null
         }
       },
@@ -1529,10 +1661,10 @@
     {
       "test_name": "mimic_joint",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 118.668,
+      "duration": 270.443,
       "message": "",
       "metrics": {
         "mim_mimic_pairs_detected": {
@@ -1544,7 +1676,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 32.941,
+          "value": 65.39,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -1552,11 +1684,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 156.86,
+          "value": 311.38,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 5.19,
+          "value": 8.991,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -1576,19 +1708,19 @@
           "unit": null
         },
         "mim_pair_right_finger_base_link_mean_error_rad": {
-          "value": 2.131006803712412e-08,
+          "value": 2.5656240053152835e-08,
           "unit": null
         },
         "mim_pair_right_finger_base_link_ref_swept_rad": {
-          "value": 1.0717512580449693,
+          "value": 1.0716992827947251,
           "unit": null
         },
         "mim_pair_right_finger_base_link_follower_observed_rad": {
-          "value": 1.0717516327276826,
+          "value": 1.071699538268149,
           "unit": null
         },
         "mim_pair_right_finger_base_link_follower_expected_rad": {
-          "value": 1.0717512580449693,
+          "value": 1.0716992827947251,
           "unit": null
         },
         "mim_pair_right_finger_base_link_dir_matches_gear": {
@@ -1596,11 +1728,11 @@
           "unit": null
         },
         "mim_pair_right_finger_base_link_motion_ratio": {
-          "value": 1.0000003495985756,
+          "value": 1.0000002383816318,
           "unit": null
         },
         "mim_pair_right_finger_base_link_gear_ratio_error": {
-          "value": 3.4959857564409447e-07,
+          "value": 2.383816317674814e-07,
           "unit": null
         },
         "mim_pair_right_finger_base_link_abs_formula_max_error_rad": {
@@ -1616,19 +1748,19 @@
           "unit": null
         },
         "mim_pair_right_finger_cover_joint_mean_error_rad": {
-          "value": 4.284083843231201e-08,
+          "value": 4.377216100692749e-08,
           "unit": null
         },
         "mim_pair_right_finger_cover_joint_ref_swept_rad": {
-          "value": 0.9514628052711487,
+          "value": 0.9514628127217293,
           "unit": null
         },
         "mim_pair_right_finger_cover_joint_follower_observed_rad": {
-          "value": 0.9514628201723099,
+          "value": 0.9514628276228905,
           "unit": null
         },
         "mim_pair_right_finger_cover_joint_follower_expected_rad": {
-          "value": 0.9514628052711487,
+          "value": 0.9514628127217293,
           "unit": null
         },
         "mim_pair_right_finger_cover_joint_dir_matches_gear": {
@@ -1656,7 +1788,7 @@
           "unit": null
         },
         "mim_pair_right_inner_proximal_finger_joint_mean_error_rad": {
-          "value": 5.3861488898595176e-08,
+          "value": 5.044663945833842e-08,
           "unit": null
         },
         "mim_pair_right_inner_proximal_finger_joint_ref_swept_rad": {
@@ -1696,19 +1828,19 @@
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_mean_error_rad": {
-          "value": 4.392738143603007e-08,
+          "value": 4.501392443974813e-08,
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_ref_swept_rad": {
-          "value": 0.9514628052711487,
+          "value": 0.951463021337986,
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_follower_observed_rad": {
-          "value": 0.9514628201723099,
+          "value": 0.9514630362391472,
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_follower_expected_rad": {
-          "value": 0.9514628052711487,
+          "value": 0.951463021337986,
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_dir_matches_gear": {
@@ -1716,11 +1848,11 @@
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_motion_ratio": {
-          "value": 1.0000000156613176,
+          "value": 1.000000015661314,
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_gear_ratio_error": {
-          "value": 1.5661317576132205e-08,
+          "value": 1.5661314023418527e-08,
           "unit": null
         },
         "mim_pair_left_outer_proximal_finger_joint_abs_formula_max_error_rad": {
@@ -1736,19 +1868,19 @@
           "unit": null
         },
         "mim_pair_left_finger_base_joint_mean_error_rad": {
-          "value": 4.547958572705587e-08,
+          "value": 4.765267173449198e-08,
           "unit": null
         },
         "mim_pair_left_finger_base_joint_ref_swept_rad": {
-          "value": 0.9514632895588875,
+          "value": 0.9514628127217293,
           "unit": null
         },
         "mim_pair_left_finger_base_joint_follower_observed_rad": {
-          "value": 0.9514634236693382,
+          "value": 0.95146294683218,
           "unit": null
         },
         "mim_pair_left_finger_base_joint_follower_expected_rad": {
-          "value": 0.9514632895588875,
+          "value": 0.9514628127217293,
           "unit": null
         },
         "mim_pair_left_finger_base_joint_dir_matches_gear": {
@@ -1756,11 +1888,11 @@
           "unit": null
         },
         "mim_pair_left_finger_base_joint_motion_ratio": {
-          "value": 1.000000140951787,
+          "value": 1.0000001409518575,
           "unit": null
         },
         "mim_pair_left_finger_base_joint_gear_ratio_error": {
-          "value": 1.4095178690887167e-07,
+          "value": 1.4095185751905603e-07,
           "unit": null
         },
         "mim_pair_left_finger_base_joint_abs_formula_max_error_rad": {
@@ -1776,7 +1908,7 @@
           "unit": null
         },
         "mim_pair_left_finger_cover_joint_mean_error_rad": {
-          "value": 4.858399430910746e-08,
+          "value": 5.324060718218485e-08,
           "unit": null
         },
         "mim_pair_left_finger_cover_joint_ref_swept_rad": {
@@ -1812,23 +1944,23 @@
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_max_error_rad": {
-          "value": 1.341104507446289e-07,
+          "value": 1.4156103134155273e-07,
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_mean_error_rad": {
-          "value": 4.641090830167135e-08,
+          "value": 5.3551048040390015e-08,
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_ref_swept_rad": {
-          "value": 0.9514697268605232,
+          "value": 0.951469250023365,
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_follower_observed_rad": {
-          "value": 0.951469860970974,
+          "value": 0.9514693766832352,
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_follower_expected_rad": {
-          "value": 0.9514697268605232,
+          "value": 0.951469250023365,
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_dir_matches_gear": {
@@ -1836,11 +1968,11 @@
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_motion_ratio": {
-          "value": 1.0000001409508332,
+          "value": 1.0000001331202981,
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_gear_ratio_error": {
-          "value": 1.4095083322729351e-07,
+          "value": 1.3312029811807236e-07,
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_abs_formula_max_error_rad": {
@@ -1848,7 +1980,7 @@
           "unit": null
         },
         "mim_pair_left_inner_proximal_joint_rest_residual_rad": {
-          "value": 1.4901161193847656e-08,
+          "value": 2.2351741790771484e-08,
           "unit": null
         },
         "mim_pairs_passed": {
@@ -1869,7 +2001,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -1879,7 +2011,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -1894,7 +2026,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -1909,7 +2041,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -1931,346 +2063,21 @@
     {
       "test_name": "mimic_joint",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
-      "status": "pass",
-      "passed": true,
-      "duration": 167.868,
-      "message": "",
-      "metrics": {
-        "mim_mimic_pairs_detected": {
-          "value": 7,
-          "unit": null
-        },
-        "mim_skipped_pairs": {
-          "value": 0,
-          "unit": null
-        },
-        "_timing_capture_frame_total_s": {
-          "value": 27.76,
-          "unit": null
-        },
-        "_timing_capture_frame_count": {
-          "value": 210,
-          "unit": null
-        },
-        "_timing_capture_frame_avg_ms": {
-          "value": 132.19,
-          "unit": null
-        },
-        "_timing_encode_video_total_s": {
-          "value": 4.585,
-          "unit": null
-        },
-        "_timing_encode_video_count": {
-          "value": 1,
-          "unit": null
-        },
-        "_render_blank_retry_count": {
-          "value": 0,
-          "unit": null
-        },
-        "_render_blank_retry_unrecovered": {
-          "value": 0,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_max_error_rad": {
-          "value": 0.0001196310794711053,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_mean_error_rad": {
-          "value": 6.523945793161327e-05,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_ref_swept_rad": {
-          "value": 1.0023300989242472,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_follower_observed_rad": {
-          "value": 1.0024497300037183,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_follower_expected_rad": {
-          "value": 1.0023300989242472,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_dir_matches_gear": {
-          "value": 1,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_motion_ratio": {
-          "value": 1.000119352975232,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_gear_ratio_error": {
-          "value": 0.00011935297523191224,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_abs_formula_max_error_rad": {
-          "value": 0.0008013248443603516,
-          "unit": null
-        },
-        "mim_pair_right_finger_base_link_rest_residual_rad": {
-          "value": 0.0006816937648892463,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_max_error_rad": {
-          "value": 0.00020420551300048828,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_mean_error_rad": {
-          "value": 0.00010902155190706253,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_ref_swept_rad": {
-          "value": 0.8110542744398117,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_follower_observed_rad": {
-          "value": 0.8107820898294449,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_follower_expected_rad": {
-          "value": 0.8110542744398117,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_dir_matches_gear": {
-          "value": 1,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_motion_ratio": {
-          "value": 0.9996644064165067,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_gear_ratio_error": {
-          "value": 0.0003355935834933321,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_abs_formula_max_error_rad": {
-          "value": 0.0004292130470275879,
-          "unit": null
-        },
-        "mim_pair_right_finger_cover_joint_rest_residual_rad": {
-          "value": 0.0002250075340270996,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_max_error_rad": {
-          "value": 0.00041878223419189453,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_mean_error_rad": {
-          "value": 0.00024110979090134302,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_ref_swept_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_follower_observed_rad": {
-          "value": 0.8117121607065201,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_follower_expected_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_dir_matches_gear": {
-          "value": 1,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_motion_ratio": {
-          "value": 1.000811131109462,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_gear_ratio_error": {
-          "value": 0.000811131109462071,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_abs_formula_max_error_rad": {
-          "value": 0.0008826255798339844,
-          "unit": null
-        },
-        "mim_pair_right_inner_proximal_finger_joint_rest_residual_rad": {
-          "value": 0.00046384334564208984,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_max_error_rad": {
-          "value": 0.0006543993949890137,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_mean_error_rad": {
-          "value": 0.00035152770578861237,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_ref_swept_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_follower_observed_rad": {
-          "value": 0.8120544105768204,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_follower_expected_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_dir_matches_gear": {
-          "value": 1,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_motion_ratio": {
-          "value": 1.001233112565942,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_gear_ratio_error": {
-          "value": 0.0012331125659419406,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_abs_formula_max_error_rad": {
-          "value": 0.0011585354804992676,
-          "unit": null
-        },
-        "mim_pair_left_outer_proximal_finger_joint_rest_residual_rad": {
-          "value": 0.0005041360855102539,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_max_error_rad": {
-          "value": 5.352497100830078e-05,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_mean_error_rad": {
-          "value": 1.958726594845454e-05,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_ref_swept_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_follower_observed_rad": {
-          "value": 0.811106264591217,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_follower_expected_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_dir_matches_gear": {
-          "value": 1,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_motion_ratio": {
-          "value": 1.0000640835649688,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_gear_ratio_error": {
-          "value": 6.408356496878653e-05,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_abs_formula_max_error_rad": {
-          "value": 0.0008696913719177246,
-          "unit": null
-        },
-        "mim_pair_left_finger_base_joint_rest_residual_rad": {
-          "value": 0.0008161664009094238,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_max_error_rad": {
-          "value": 0.000216752290725708,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_mean_error_rad": {
-          "value": 0.00011590961366891861,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_ref_swept_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_follower_observed_rad": {
-          "value": 0.8107635378837585,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_follower_expected_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_dir_matches_gear": {
-          "value": 1,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_motion_ratio": {
-          "value": 0.9996415141858745,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_gear_ratio_error": {
-          "value": 0.0003584858141254532,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_abs_formula_max_error_rad": {
-          "value": 0.0004368424415588379,
-          "unit": null
-        },
-        "mim_pair_left_finger_cover_joint_rest_residual_rad": {
-          "value": 0.00022009015083312988,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_max_error_rad": {
-          "value": 0.00041878223419189453,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_mean_error_rad": {
-          "value": 0.00024110979090134302,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_ref_swept_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_follower_observed_rad": {
-          "value": 0.8117121607065201,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_follower_expected_rad": {
-          "value": 0.8110542893409729,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_dir_matches_gear": {
-          "value": 1,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_motion_ratio": {
-          "value": 1.000811131109462,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_gear_ratio_error": {
-          "value": 0.000811131109462071,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_abs_formula_max_error_rad": {
-          "value": 0.0008826255798339844,
-          "unit": null
-        },
-        "mim_pair_left_inner_proximal_joint_rest_residual_rad": {
-          "value": 0.00046384334564208984,
-          "unit": null
-        },
-        "mim_pairs_passed": {
-          "value": 7,
-          "unit": null
-        },
-        "mim_pairs_failed": {
-          "value": 0,
-          "unit": null
-        }
-      },
+      "engine_version": "",
+      "status": "fail",
+      "passed": false,
+      "duration": 906.556,
+      "message": "Test exceeded its declared max_duration of 300 seconds; the engine session was terminated (retries exhausted).",
+      "metrics": {},
       "kit_logs": []
     },
     {
       "test_name": "multi_joint_coordination",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 1.224,
+      "duration": 4.107,
       "message": "MJC skipped: asset has only 1/8 joints with finite position limits; MJC needs at least 2.\n\nWHAT THE TEST FOUND:\n  - Articulation DOFs reported by Isaac: 8\n  - DOFs with finite (lower, upper) and upper-lower > 1e-6: 1\n  - Required by MJC: >= 2 (each driven independently to a mid-range\n    target chosen by target_factors x [lower+margin, upper-margin]).\n\nWHY IT MATTERS:\n  MJC validates simultaneous multi-joint convergence under the PD\n  drive controller. A revolute joint authored without limits (or\n  with type='none', or as a continuous joint) has no mid-range\n  target the test can pick, so it cannot participate.\n\nFIX: On every joint you intend MJC to exercise, author finite\nposition limits on the matching axis. For PhysicsRevoluteJoint use\nlowerLimit/upperLimit in DEGREES; for PhysicsPrismaticJoint use\nlowerLimit/upperLimit in the stage's linear unit (typically meters).\nBoth must be finite and upperLimit > lowerLimit.\n\nTEMPLATE -- paste/edit on each joint prim. Pick limits that match\nthe real mechanical travel of the joint; do NOT use +-inf:\n\n    def PhysicsRevoluteJoint \"joint_1\"\n    {\n        uniform token physics:axis = \"Z\"\n        float physics:lowerLimit = -170.0   # degrees\n        float physics:upperLimit =  170.0   # degrees\n        # ... body0 / body1 / localPos0 / localPos1 ...\n    }\n\n    def PhysicsPrismaticJoint \"slider_1\"\n    {\n        uniform token physics:axis = \"X\"\n        float physics:lowerLimit = 0.0      # meters\n        float physics:upperLimit = 0.085    # meters\n        # ... body0 / body1 / localPos0 / localPos1 ...\n    }\n\nCHECKLIST per joint you expect MJC to drive:\n  - physics:axis is set (X / Y / Z).\n  - physics:lowerLimit and physics:upperLimit are BOTH finite.\n  - physics:upperLimit - physics:lowerLimit > 1e-6 (non-degenerate).\n  - Joint is reachable from the articulation root (otherwise Isaac\n    will not expose it as a DOF; see FET_024 for articulation\n    topology requirements).\n\nIf the joint is intentionally free-running (e.g. a passive wheel),\nexclude it from your articulation rather than leaving it limit-less.\n\nREFERENCE:\n  Spec (driven joints):  nv_core/sr_specs/docs/shared/features/FET_022-driven_joints.md\n  Spec (articulation):   nv_core/tiers/simready_foundation_tier_core/simready/foundation/tier_core/features/FET_024-base_articulation.md\n  Example: sample_content/common_assets/robots_general/Robotiq/2F-85/simready_isaac_usd/Robotiq_2F_85.usda\n           (search for: prepend apiSchemas = [\"PhysicsDriveAPI:angular\"])",
       "metrics": {
         "mjc_total_joints": {
@@ -2291,10 +2098,10 @@
     {
       "test_name": "multi_joint_coordination",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 25.848,
+      "duration": 48.418,
       "message": "MJC skipped: asset has only 1/8 joints with finite position limits; MJC needs at least 2.\n\nWHAT THE TEST FOUND:\n  - Articulation DOFs reported by Isaac: 8\n  - DOFs with finite (lower, upper) and upper-lower > 1e-6: 1\n  - Required by MJC: >= 2 (each driven independently to a mid-range\n    target chosen by target_factors x [lower+margin, upper-margin]).\n\nWHY IT MATTERS:\n  MJC validates simultaneous multi-joint convergence under the PD\n  drive controller. A revolute joint authored without limits (or\n  with type='none', or as a continuous joint) has no mid-range\n  target the test can pick, so it cannot participate.\n\nFIX: On every joint you intend MJC to exercise, author finite\nposition limits on the matching axis. For PhysicsRevoluteJoint use\nlowerLimit/upperLimit in DEGREES; for PhysicsPrismaticJoint use\nlowerLimit/upperLimit in the stage's linear unit (typically meters).\nBoth must be finite and upperLimit > lowerLimit.\n\nTEMPLATE -- paste/edit on each joint prim. Pick limits that match\nthe real mechanical travel of the joint; do NOT use +-inf:\n\n    def PhysicsRevoluteJoint \"joint_1\"\n    {\n        uniform token physics:axis = \"Z\"\n        float physics:lowerLimit = -170.0   # degrees\n        float physics:upperLimit =  170.0   # degrees\n        # ... body0 / body1 / localPos0 / localPos1 ...\n    }\n\n    def PhysicsPrismaticJoint \"slider_1\"\n    {\n        uniform token physics:axis = \"X\"\n        float physics:lowerLimit = 0.0      # meters\n        float physics:upperLimit = 0.085    # meters\n        # ... body0 / body1 / localPos0 / localPos1 ...\n    }\n\nCHECKLIST per joint you expect MJC to drive:\n  - physics:axis is set (X / Y / Z).\n  - physics:lowerLimit and physics:upperLimit are BOTH finite.\n  - physics:upperLimit - physics:lowerLimit > 1e-6 (non-degenerate).\n  - Joint is reachable from the articulation root (otherwise Isaac\n    will not expose it as a DOF; see FET_024 for articulation\n    topology requirements).\n\nIf the joint is intentionally free-running (e.g. a passive wheel),\nexclude it from your articulation rather than leaving it limit-less.\n\nREFERENCE:\n  Spec (driven joints):  nv_core/sr_specs/docs/shared/features/FET_022-driven_joints.md\n  Spec (articulation):   nv_core/tiers/simready_foundation_tier_core/simready/foundation/tier_core/features/FET_024-base_articulation.md\n  Example: sample_content/common_assets/robots_general/Robotiq/2F-85/simready_isaac_usd/Robotiq_2F_85.usda\n           (search for: prepend apiSchemas = [\"PhysicsDriveAPI:angular\"])",
       "metrics": {
         "mjc_total_joints": {
@@ -2315,14 +2122,14 @@
     {
       "test_name": "normals_xz",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 3.502,
+      "duration": 8.635,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 0.713,
+          "value": 1.719,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -2330,133 +2137,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 89.12,
+          "value": 214.92,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.393,
-          "unit": null
-        },
-        "_timing_encode_video_count": {
-          "value": 1,
-          "unit": null
-        },
-        "_render_blank_retry_count": {
-          "value": 0,
-          "unit": null
-        },
-        "_render_blank_retry_unrecovered": {
-          "value": 0,
-          "unit": null
-        },
-        "normals_xz_avg_dark": {
-          "value": 0.002596,
-          "unit": null
-        },
-        "normals_xz_max_dark": {
-          "value": 0.010523,
-          "unit": null
-        },
-        "normals_xz_problem_frames": {
-          "value": 0,
-          "unit": null
-        },
-        "normals_xz_passed": {
-          "value": 1,
-          "unit": null
-        }
-      },
-      "kit_logs": [
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]: Traceback (most recent call last):"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     self.__drawable_changed_fn(texture[\"rp_resource\"], presentation_key)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     vp_api._sync_viewport_api(camera, canvas_size, vp_api.time, view, projection, force_update=True)  # noqa PLW0212"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     self.__projection = self._conform_projection(policy, camera, image_aspect, canvas_aspect, projection)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     gf_camera = camera.GetCamera(self.__time)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:                 ^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]: AttributeError: 'NoneType' object has no attribute 'GetCamera'"
-        }
-      ]
-    },
-    {
-      "test_name": "normals_xz",
-      "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
-      "status": "pass",
-      "passed": true,
-      "duration": 3.712,
-      "message": "",
-      "metrics": {
-        "_timing_capture_frame_total_s": {
-          "value": 0.736,
-          "unit": null
-        },
-        "_timing_capture_frame_count": {
-          "value": 8,
-          "unit": null
-        },
-        "_timing_capture_frame_avg_ms": {
-          "value": 92.0,
-          "unit": null
-        },
-        "_timing_encode_video_total_s": {
-          "value": 0.423,
+          "value": 0.865,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -2476,7 +2161,7 @@
           "unit": null
         },
         "normals_xz_max_dark": {
-          "value": 0.010356,
+          "value": 0.010578,
           "unit": null
         },
         "normals_xz_problem_frames": {
@@ -2497,7 +2182,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -2507,7 +2192,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -2522,7 +2207,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -2537,7 +2222,129 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     gf_camera = camera.GetCamera(self.__time)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                 ^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: AttributeError: 'NoneType' object has no attribute 'GetCamera'"
+        }
+      ]
+    },
+    {
+      "test_name": "normals_xz",
+      "engine": "isaac_sim_newton",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
+      "status": "pass",
+      "passed": true,
+      "duration": 8.37,
+      "message": "",
+      "metrics": {
+        "_timing_capture_frame_total_s": {
+          "value": 1.835,
+          "unit": null
+        },
+        "_timing_capture_frame_count": {
+          "value": 8,
+          "unit": null
+        },
+        "_timing_capture_frame_avg_ms": {
+          "value": 229.36,
+          "unit": null
+        },
+        "_timing_encode_video_total_s": {
+          "value": 0.887,
+          "unit": null
+        },
+        "_timing_encode_video_count": {
+          "value": 1,
+          "unit": null
+        },
+        "_render_blank_retry_count": {
+          "value": 0,
+          "unit": null
+        },
+        "_render_blank_retry_unrecovered": {
+          "value": 0,
+          "unit": null
+        },
+        "normals_xz_avg_dark": {
+          "value": 0.002472,
+          "unit": null
+        },
+        "normals_xz_max_dark": {
+          "value": 0.00994,
+          "unit": null
+        },
+        "normals_xz_problem_frames": {
+          "value": 0,
+          "unit": null
+        },
+        "normals_xz_passed": {
+          "value": 1,
+          "unit": null
+        }
+      },
+      "kit_logs": [
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: Traceback (most recent call last):"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__drawable_changed_fn(texture[\"rp_resource\"], presentation_key)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     vp_api._sync_viewport_api(camera, canvas_size, vp_api.time, view, projection, force_update=True)  # noqa PLW0212"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__projection = self._conform_projection(policy, camera, image_aspect, canvas_aspect, projection)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -2559,14 +2366,14 @@
     {
       "test_name": "pivot",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 6.512,
+      "duration": 17.932,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 2.242,
+          "value": 5.127,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -2574,11 +2381,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 112.09,
+          "value": 256.36,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.993,
+          "value": 2.065,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -2631,7 +2438,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -2641,7 +2448,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -2656,7 +2463,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -2671,7 +2478,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -2693,14 +2500,14 @@
     {
       "test_name": "pivot",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 6.639,
+      "duration": 16.99,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 2.259,
+          "value": 5.061,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -2708,11 +2515,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 112.96,
+          "value": 253.07,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 1.027,
+          "value": 2.182,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -2765,7 +2572,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -2775,7 +2582,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -2790,7 +2597,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -2805,7 +2612,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -2827,14 +2634,14 @@
     {
       "test_name": "presence",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 1.499,
+      "duration": 3.781,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 0.165,
+          "value": 0.392,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -2842,7 +2649,7 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 82.56,
+          "value": 195.87,
           "unit": null
         },
         "_timing_encode_video_total_s": {
@@ -2862,7 +2669,7 @@
           "unit": null
         },
         "presence_diff_ratio": {
-          "value": 0.121302,
+          "value": 0.121347,
           "unit": null
         },
         "presence_passed": {
@@ -2879,7 +2686,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -2889,7 +2696,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -2904,7 +2711,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -2919,7 +2726,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -2941,14 +2748,14 @@
     {
       "test_name": "presence",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 1.893,
+      "duration": 3.749,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 0.162,
+          "value": 0.386,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -2956,7 +2763,7 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 81.13,
+          "value": 193.21,
           "unit": null
         },
         "_timing_encode_video_total_s": {
@@ -2976,7 +2783,7 @@
           "unit": null
         },
         "presence_diff_ratio": {
-          "value": 0.12131,
+          "value": 0.121314,
           "unit": null
         },
         "presence_passed": {
@@ -2984,85 +2791,19 @@
           "unit": null
         }
       },
-      "kit_logs": [
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]: Traceback (most recent call last):"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     self.__drawable_changed_fn(texture[\"rp_resource\"], presentation_key)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     vp_api._sync_viewport_api(camera, canvas_size, vp_api.time, view, projection, force_update=True)  # noqa PLW0212"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     self.__projection = self._conform_projection(policy, camera, image_aspect, canvas_aspect, projection)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     gf_camera = camera.GetCamera(self.__time)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:                 ^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]: AttributeError: 'NoneType' object has no attribute 'GetCamera'"
-        }
-      ]
+      "kit_logs": []
     },
     {
       "test_name": "preview_surface_renders",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 2.531,
+      "duration": 6.827,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 0.719,
+          "value": 1.704,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -3070,7 +2811,7 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 179.84,
+          "value": 426.12,
           "unit": null
         },
         "_timing_encode_video_total_s": {
@@ -3118,7 +2859,7 @@
           "unit": null
         },
         "universal_surface_silhouette_pixels": {
-          "value": 122681,
+          "value": 122576,
           "unit": null
         },
         "universal_surface_uncovered_pixels": {
@@ -3139,7 +2880,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -3149,7 +2890,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -3164,7 +2905,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -3179,7 +2920,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -3201,14 +2942,14 @@
     {
       "test_name": "preview_surface_renders",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 2.194,
+      "duration": 5.917,
       "message": "",
       "metrics": {
         "_timing_capture_frame_total_s": {
-          "value": 0.649,
+          "value": 1.658,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -3216,7 +2957,7 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 162.2,
+          "value": 414.58,
           "unit": null
         },
         "_timing_encode_video_total_s": {
@@ -3264,7 +3005,7 @@
           "unit": null
         },
         "universal_surface_silhouette_pixels": {
-          "value": 122664,
+          "value": 122657,
           "unit": null
         },
         "universal_surface_uncovered_pixels": {
@@ -3285,7 +3026,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
         },
         {
           "level": "error",
@@ -3295,7 +3036,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
         },
         {
           "level": "error",
@@ -3310,7 +3051,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
         },
         {
           "level": "error",
@@ -3325,7 +3066,7 @@
         {
           "level": "error",
           "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
         },
         {
           "level": "error",
@@ -3347,10 +3088,10 @@
     {
       "test_name": "slope_drop",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 0.094,
+      "duration": 0.179,
       "message": "Asset is world-anchored (FixedJoint to world) -- test not applicable. World-anchored assets cannot fall or slide.",
       "metrics": {
         "slope_drop_skipped": {
@@ -3363,10 +3104,10 @@
     {
       "test_name": "slope_drop",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "skipped",
       "passed": false,
-      "duration": 0.097,
+      "duration": 0.272,
       "message": "Asset is world-anchored (FixedJoint to world) -- test not applicable. World-anchored assets cannot fall or slide.",
       "metrics": {
         "slope_drop_skipped": {
@@ -3379,10 +3120,10 @@
     {
       "test_name": "state_accuracy",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 10.264,
+      "duration": 24.742,
       "message": "",
       "metrics": {
         "sta_joints_with_limits": {
@@ -3402,7 +3143,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 2.988,
+          "value": 6.216,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -3410,11 +3151,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 157.27,
+          "value": 327.13,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.714,
+          "value": 1.514,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -3442,7 +3183,7 @@
           "unit": null
         },
         "sta_max_position_error_deg": {
-          "value": 2.7243901950766993,
+          "value": 2.7243902751179787,
           "unit": null
         }
       },
@@ -3451,10 +3192,10 @@
     {
       "test_name": "state_accuracy",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 53.332,
+      "duration": 104.787,
       "message": "",
       "metrics": {
         "sta_joints_with_limits": {
@@ -3474,7 +3215,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 6.017,
+          "value": 12.657,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -3482,11 +3223,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 133.7,
+          "value": 281.26,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 1.265,
+          "value": 2.663,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -3518,15 +3259,81 @@
           "unit": null
         }
       },
-      "kit_logs": []
+      "kit_logs": [
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: Traceback (most recent call last):"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__drawable_changed_fn(texture[\"rp_resource\"], presentation_key)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     vp_api._sync_viewport_api(camera, canvas_size, vp_api.time, view, projection, force_update=True)  # noqa PLW0212"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     self.__projection = self._conform_projection(policy, camera, image_aspect, canvas_aspect, projection)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:   File \"<home>/projects/isaacsim/_build/linux-x86_64/release/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:     gf_camera = camera.GetCamera(self.__time)"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]:                 ^^^^^^^^^^^^^^^^"
+        },
+        {
+          "level": "error",
+          "channel": "omni.kit.app._impl",
+          "message": "[py stderr]: AttributeError: 'NoneType' object has no attribute 'GetCamera'"
+        }
+      ]
     },
     {
       "test_name": "velocity_limit",
       "engine": "isaac_sim",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "pass",
       "passed": true,
-      "duration": 4.157,
+      "duration": 11.315,
       "message": "",
       "metrics": {
         "vel_joints_skipped_passive": {
@@ -3546,7 +3353,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 0.537,
+          "value": 1.218,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -3554,11 +3361,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 268.57,
+          "value": 608.88,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.354,
+          "value": 0.744,
           "unit": null
         },
         "_timing_encode_video_count": {
@@ -3587,81 +3394,16 @@
           "level": "error",
           "channel": "omni.physx.plugin",
           "message": "PhysX error: Illegal BroadPhaseUpdateData - non-finite bounds\n, FILE ./builds/omniverse/physics/physx/source/lowlevelaabb/src/BpBroadPhaseUpdate.cpp, LINE 136"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]: Traceback (most recent call last):"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/impl/texture.py\", line 377, in on_drawable_changed"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     self.__drawable_changed_fn(texture[\"rp_resource\"], presentation_key)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/widget.py\", line 516, in __set_image_data"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     vp_api._sync_viewport_api(camera, canvas_size, vp_api.time, view, projection, force_update=True)  # noqa PLW0212"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 546, in _sync_viewport_api"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     self.__projection = self._conform_projection(policy, camera, image_aspect, canvas_aspect, projection)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:   File \"<home>/extscache/omni.kit.widget.viewport-110.0.0+00c488ae/omni/kit/widget/viewport/api.py\", line 476, in _conform_projection"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:     gf_camera = camera.GetCamera(self.__time)"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]:                 ^^^^^^^^^^^^^^^^"
-        },
-        {
-          "level": "error",
-          "channel": "omni.kit.app._impl",
-          "message": "[py stderr]: AttributeError: 'NoneType' object has no attribute 'GetCamera'"
         }
       ]
     },
     {
       "test_name": "velocity_limit",
       "engine": "isaac_sim_newton",
-      "engine_version": "6.1.0-rc.26+release.49347.2d230af4.gl",
+      "engine_version": "6.1.0-rc.26+mr.0.7c206f75.local",
       "status": "fail",
       "passed": false,
-      "duration": 39.469,
+      "duration": 73.752,
       "message": "VEL: 1/1 joint(s) exceeded their authored velocity limit: finger_joint.\n\nWhat the test did:\n  - Commanded each joint to the opposite end of its position\n    range (with a 5% margin) and stepped physics for\n    `test_duration_seconds` (default 2s) at `physics_fps` (default 240).\n  - Compared the per-frame |joint velocity| (rad/s) against the\n    authored velocity limit, converted from its USD units\n    (degrees/s for revolute, distance/s for prismatic) to rad/s,\n    allowing a `tolerance_percent` overshoot (default 5%).\n\nPer-joint peaks:\n    - finger_joint: peak=2.617, limit=0.849 (+208.1% over, limit-source=dof_or_usd_min)\n\nFIX -- decide which side is wrong and edit the asset:\n\n(a) If the joint legitimately needs to move that fast, raise\n    the authored limit on the joint prim to match the\n    datasheet rated speed:\n\n        over <./Robot/joints/finger_joint>:\n        {\n            # New value >= observed peak, authored in DEGREES/s\n            # (revolute) or distance/s (prismatic). The peak\n            # reported above is rad/s -- multiply by 180/pi to\n            # get deg/s. Keep within physical limits.\n            float physxJoint:maxJointVelocity = <new_value>\n        }\n\n(b) If the limit is correct and the drive is overshooting,\n    retune the PD controller on the joint's drive so it\n    cannot accelerate past the cap when chasing the target:\n      - LOWER `drive:angular:physics:stiffness` (or\n        `drive:linear:physics:stiffness`).\n      - RAISE `drive:*:physics:damping`.\n      - LOWER `drive:*:physics:maxForce` -- excess available\n        torque is what lets the joint blow past the cap.\n    A reasonable starting point: damping ~= 2 * sqrt(stiffness\n    * effective_inertia); then iterate.\n\n(c) If both the limit and the drive are correct and PhysX is\n    still overshooting by a small margin, bump\n    `tolerance_percent` in the test config -- but only as a\n    last resort; (a) and (b) are the right fix.\n\nPer-joint peak velocities are also recorded as warnings above\nand counted in `vel_joints_failed` in result.json.\n\nREFERENCE:\n  Spec:    nv_core/tiers/simready_foundation_tier_core/simready/foundation/tier_core/capabilities/physics_bodies/physics_driven_joints/requirements/physics-joint-max-velocity.md\n           (DJ.005 -- physxJoint:maxJointVelocity > 0 required on\n            every revolute/prismatic PhysX driven joint)\n  Example: sample_content/common_assets/robots_general/ur10/simready_isaac_usd/payloads/Physics/physx.usda\n           (search for: float physxJoint:maxJointVelocity = 120)",
       "metrics": {
         "vel_joints_skipped_passive": {
@@ -3681,7 +3423,7 @@
           "unit": null
         },
         "_timing_capture_frame_total_s": {
-          "value": 2.527,
+          "value": 5.445,
           "unit": null
         },
         "_timing_capture_frame_count": {
@@ -3689,11 +3431,11 @@
           "unit": null
         },
         "_timing_capture_frame_avg_ms": {
-          "value": 140.37,
+          "value": 302.52,
           "unit": null
         },
         "_timing_encode_video_total_s": {
-          "value": 0.722,
+          "value": 1.523,
           "unit": null
         },
         "_timing_encode_video_count": {

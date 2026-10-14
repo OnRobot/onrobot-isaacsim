@@ -59,11 +59,11 @@
     },
     {
       "relative_path": "simready_usd/payloads/geometries.usd",
-      "size": 5837110,
+      "size": 5836904,
       "hash": {
-        "sha256-flat-1mb": "518f303b7f9056d37810e37ef3b50029f0549a2adb44c804a1d2b50c83aa12ac",
-        "sha256": "77f13f5c7c9b8aa808eecb28e28df947ff18d49a14103ad088ea871f80d898b2",
-        "sha256-first1m": "3372ef3b5a44b8c3db3d41e5c4e3bfdaf5089b64d14529d5203e2a767dec5a5a"
+        "sha256-flat-1mb": "98d9c0cac1f5b76356ec27a8e0f29d7cc0751e348b1f18dfabae74b6fe886a96",
+        "sha256": "0dc8c9a6eaa495d766387ab695a38a59efd3b1e04aaa6d913742bd67bfb6f357",
+        "sha256-first1m": "4d35b3bbdf5ed4715421eb987e8c24c4998ffb44198d729289baba5575ac3874"
       }
     },
     {

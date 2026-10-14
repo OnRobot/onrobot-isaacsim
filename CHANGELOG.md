@@ -8,6 +8,7 @@ This release updates the existing assets for SimReady and Isaac Sim 6.1.
 * Support Isaac Sim 6.1.
 * Package each gripper with metadata and thumbnails; entry points are now `assets/onrobot_<model>/simready_usd/onrobot_<model>.usda`.
 * Include NVIDIA's bill of materials and validation and benchmark reports in each model package.
+* Remove local import-history paths from geometry files without changing the models.
 
 ## v1.0.0
 
