@@ -1,0 +1,109 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary SimReady_Metadata = {
+            float3 asset_extents = (0.15261936, 0.07487707, 0.20835948)
+            string asset_license = "BSD-3-Clause"
+            string asset_name = "onrobot_rg2"
+            string asset_type = "gripper"
+            string author = "OnRobot A/S"
+            string category = "robot_gripper"
+            double mass = 0.7168110955390148
+            string qcode = "Q1340324"
+            int rigid_body_count = 14
+            string source_file = "assets/onrobot_rg2/simready_usd/onrobot_rg2.usda"
+            string source_manifest_sha256 = "62cbb6ff62d264ce967bf35b8b16c1ba504d1a8ed4b0d4af2fa48f4dc0494812"
+            string usd_date_generated = "2026-10-07"
+        }
+        string asset_name = "onrobot_rg2"
+        string asset_type = "gripper"
+        string source_file = "assets/onrobot_rg2/simready_usd/onrobot_rg2.usda"
+        string usd_date_generated = "2026-10-07"
+    }
+    defaultPrim = "onrobot_rg2"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "onrobot_rg2" (
+    prepend apiSchemas = ["SemanticsLabelsAPI:class", "SemanticsLabelsAPI:wikidata_qcode"]
+    kind = "component"
+    prepend references = @./payloads/base.usda@
+    variants = {
+        string Newton = "Disabled"
+        string Physics = "physx_parallel_grip"
+    }
+    prepend variantSets = "Newton"
+    append variantSets = "Physics"
+)
+{
+    token[] semantics:labels:class = ["robotic_gripper"]
+    token[] semantics:labels:wikidata_qcode = ["Q1340324"]
+    variantSet "Physics" = {
+        "none" {
+
+        }
+        "physics" (
+            prepend payload = @./payloads/Physics/physics.usda@
+        ) {
+
+        }
+        "physx" (
+            prepend payload = @./payloads/Physics/physx.usda@
+        ) {
+
+        }
+        "physx_parallel_grip" (
+            prepend payload = @./payloads/Physics/physx_parallel_grip.usda@
+        ) {
+
+        }
+        "physx_parallel_grip_tip_contact" (
+            prepend payload = @./payloads/Physics/physx_parallel_grip_tip_contact.usda@
+        ) {
+
+        }
+    }
+    variantSet "Newton" = {
+        "Disabled" {
+
+        }
+        "Enabled" {
+            over "Geometry"
+            {
+                over "base_link"
+                {
+                    over "base_link"
+                    {
+                        over "geo_10_1"
+                        {
+                            uniform token physics:approximation = "convexHull"
+                        }
+                    }
+                }
+
+                over "body_link"
+                {
+                    over "body_link"
+                    {
+                        over "geo_8_1"
+                        {
+                            uniform token physics:approximation = "convexHull"
+                        }
+                    }
+                }
+            }
+
+            over "Physics"
+            {
+                over "root_joint"
+                {
+                    rel physics:body0 = None
+                }
+            }
+
+        }
+    }
+}
+

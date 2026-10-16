@@ -1,0 +1,747 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "OnRobot RG2 PhysX Asset Structure 3.0"
+    }
+    defaultPrim = "onrobot_rg2"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "onrobot_rg2" (
+    prepend apiSchemas = ["PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+)
+{
+    over "Geometry"
+    {
+        over "base_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (-0.0013119841, -0.00055673195, 0.017632127)
+            float3 physics:diagonalInertia = (0.000056654524, 0.000059077367, 0.00009975932)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.193452
+            quatf physics:principalAxes = (0.0047023413, 0.7093511, 0.7048381, -0.0014770064)
+
+            over "base_link"
+            {
+                over "geo_10_1" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "body_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.03614043, -0.000042819527, -0.000051603234)
+            float3 physics:diagonalInertia = (0.00011259379, 0.00031836823, 0.0003941167)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.46383658
+            quatf physics:principalAxes = (-0.70699376, 0.70720357, 0.004024671, 0.0026075335)
+
+            over "body_link"
+            {
+                over "geo_8_1" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "right_outer_proximal_finger_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.05494315, -0.0025, 0.0003)
+            float3 physics:diagonalInertia = (4.405513e-9, 4.405513e-9, 6.1660614e-9)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.00094982545
+            quatf physics:principalAxes = (1, 0, 0, 0)
+
+            over "right_outer_proximal_finger_link"
+            {
+                over "right_outer_proximal_finger_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "right_finger_cover_arm_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.004027475, -0.0022657546, 0.00007497866)
+            float3 physics:diagonalInertia = (1.7737011e-9, 3.7948857e-9, 4.778528e-9)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.0002753785
+            quatf physics:principalAxes = (0.9663694, 0.000013447368, 0.0000035784412, 0.25715786)
+
+            over "right_finger_cover_arm_link"
+            {
+                over "right_finger_cover_arm_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "right_finger_cover_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.016045675, -0.001172891, -0.00029998794)
+            float3 physics:diagonalInertia = (4.1263075e-8, 3.954523e-7, 4.3104532e-7)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.0023859623
+            quatf physics:principalAxes = (0.99903536, -6.0907075e-7, -7.8504364e-8, 0.04391347)
+
+            over "right_finger_cover_link"
+            {
+                over "right_finger_cover_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "right_finger_base_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.01903915, -0.00734946, -0.00030000502)
+            float3 physics:diagonalInertia = (2.293963e-7, 0.0000025616664, 0.0000025769089)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.011343542
+            quatf physics:principalAxes = (-0.7012579, 0.7012685, -0.09071968, -0.09071832)
+
+            over "right_finger_base_link"
+            {
+                over "right_finger_base_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "right_finger_tip_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI", "MaterialBindingAPI"]
+        )
+        {
+            rel material:binding:physics = </onrobot_rg2/Physics/fingertip_physics_material>
+            point3f physics:centerOfMass = (0.0008744484, -2.2813167e-9, 0.00021651549)
+            float3 physics:diagonalInertia = (1.8313335e-7, 3.1753453e-7, 4.5259995e-7)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.004350526
+            quatf physics:principalAxes = (0.99998176, -4.789266e-7, -0.006036999, 1.9252687e-7)
+
+            over "fingertip_standard_link"
+            {
+                over "geo_1_1" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "left_outer_proximal_finger_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.05494315, -0.0025, 0.0003)
+            float3 physics:diagonalInertia = (4.405513e-9, 4.405513e-9, 6.1660614e-9)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.00094982545
+            quatf physics:principalAxes = (1, 0, 0, 0)
+
+            over "left_outer_proximal_finger_link"
+            {
+                over "left_outer_proximal_finger_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "left_finger_cover_arm_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.0039815535, -0.0023455124, 0.0005249787)
+            float3 physics:diagonalInertia = (1.7737011e-9, 3.7948857e-9, 4.778528e-9)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.0002753785
+            quatf physics:principalAxes = (0.96578985, -0.000013334954, -0.0000035805917, 0.25932592)
+
+            over "left_finger_cover_arm_link"
+            {
+                over "left_finger_cover_arm_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "left_finger_cover_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.016045623, -0.0011728625, 0.0108134085)
+            float3 physics:diagonalInertia = (2.0618733e-8, 1.9772531e-7, 2.1553913e-7)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.0011929825
+            quatf physics:principalAxes = (0.999017, -0.004430942, 0.0043652654, 0.043890566)
+
+            over "left_finger_cover_link"
+            {
+                over "left_finger_cover_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "left_finger_base_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.01903915, -0.00734946, 0.00029999498)
+            float3 physics:diagonalInertia = (2.293963e-7, 0.0000025616664, 0.0000025769089)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.011343542
+            quatf physics:principalAxes = (-0.7012579, 0.7012685, -0.09071968, -0.09071832)
+
+            over "left_finger_base_link"
+            {
+                over "left_finger_base_link" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "left_finger_tip_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI", "MaterialBindingAPI"]
+        )
+        {
+            rel material:binding:physics = </onrobot_rg2/Physics/fingertip_physics_material>
+            point3f physics:centerOfMass = (0.0008744484, -2.2813167e-9, 0.00021651549)
+            float3 physics:diagonalInertia = (1.8313335e-7, 3.1753453e-7, 4.5259995e-7)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.004350526
+            quatf physics:principalAxes = (0.99998176, -4.789266e-7, -0.006036999, 1.9252687e-7)
+
+            over "fingertip_standard_link"
+            {
+                over "geo_1_1" (
+                    prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "right_inner_proximal_finger_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.024342075, -0.0015098414, -1.1484612e-10)
+            float3 physics:diagonalInertia = (5.1948837e-7, 0.000004167911, 0.0000045909883)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.0110525135
+            quatf physics:principalAxes = (0.706909, -0.7069087, 0.016729632, 0.016729655)
+
+            over "right_inner_proximal_finger_link" (
+                prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+            )
+            {
+            }
+        }
+
+        over "left_inner_proximal_finger_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysicsFilteredPairsAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0.024342075, -0.0015098414, -1.1985714e-10)
+            float3 physics:diagonalInertia = (5.1948837e-7, 0.000004167911, 0.0000045909883)
+            rel physics:filteredPairs = [
+                </onrobot_rg2/Geometry/base_link>,
+                </onrobot_rg2/Geometry/body_link>,
+                </onrobot_rg2/Geometry/right_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/right_finger_cover_link>,
+                </onrobot_rg2/Geometry/right_finger_base_link>,
+                </onrobot_rg2/Geometry/right_finger_tip_link>,
+                </onrobot_rg2/Geometry/left_outer_proximal_finger_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_arm_link>,
+                </onrobot_rg2/Geometry/left_finger_cover_link>,
+                </onrobot_rg2/Geometry/left_finger_base_link>,
+                </onrobot_rg2/Geometry/left_finger_tip_link>,
+                </onrobot_rg2/Geometry/right_inner_proximal_finger_link>,
+            ]
+            float physics:mass = 0.0110525135
+            quatf physics:principalAxes = (0.706909, -0.7069087, 0.016729632, 0.016729655)
+
+            over "left_inner_proximal_finger_link" (
+                prepend apiSchemas = ["NewtonMeshCollisionAPI"]
+            )
+            {
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        def Material "fingertip_physics_material" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            float physics:dynamicFriction = 0.5
+            float physics:restitution = 0
+            float physics:staticFriction = 0.6
+            token physxMaterial:frictionCombineMode = "average"
+        }
+
+        def PhysicsFixedJoint "root_joint"
+        {
+            rel physics:body0 = </onrobot_rg2>
+            rel physics:body1 = </onrobot_rg2/Geometry/base_link>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "body_joint"
+        {
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/base_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/body_link>
+            point3f physics:localPos0 = (0, 0, 0.04734)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0, 0.70710677, 0, 0.70710677)
+            quatf physics:localRot1 = (0, -1, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "finger_joint" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.13962634
+            float drive:angular:physics:maxForce = 4.5
+            float drive:angular:physics:stiffness = 1.7453293
+            float drive:angular:physics:targetPosition = 60
+            float drive:angular:physics:targetVelocity = 0
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/body_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/right_outer_proximal_finger_link>
+            point3f physics:localPos0 = (0.076, 0, -0.01695)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710546, -0.7071081, 1.110223e-16, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 70.06
+            float state:angular:physics:position = 60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "right_finger_cover_arm_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = -1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/right_outer_proximal_finger_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/right_finger_cover_arm_link>
+            point3f physics:localPos0 = (0.020024791, 0.00008994975, -1.323489e-23)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = -60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "right_finger_cover_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = 1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/right_finger_cover_arm_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/right_finger_cover_link>
+            point3f physics:localPos0 = (0.008249996, -0.0047500064, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = 60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "right_finger_base_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = -1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/right_outer_proximal_finger_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/right_finger_base_link>
+            point3f physics:localPos0 = (0.05494315, -0.0025, -1.323489e-23)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = -60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsFixedJoint "right_finger_tip_joint"
+        {
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/right_finger_base_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/right_finger_tip_link>
+            point3f physics:localPos0 = (0.0365, -0.0145, -0.0003)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, 0.70710677, 2.7755576e-16, 3.8857806e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "left_outer_proximal_finger_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = 1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/body_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/left_outer_proximal_finger_link>
+            point3f physics:localPos0 = (0.076, 0, 0.01705)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.70710677, -0.70710677, -5.551115e-17, 1.6653345e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 70.06
+            float state:angular:physics:position = 60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "left_finger_cover_arm_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = -1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/left_outer_proximal_finger_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/left_finger_cover_arm_link>
+            point3f physics:localPos0 = (0.020024791, 0.00008994975, -1.0339758e-25)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = -60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "left_finger_cover_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = 1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/left_finger_cover_arm_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/left_finger_cover_link>
+            point3f physics:localPos0 = (0.00825, -0.00475, -1.0339758e-25)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = 60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "left_finger_base_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = -1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/left_outer_proximal_finger_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/left_finger_base_link>
+            point3f physics:localPos0 = (0.054943, -0.0025, -1.0339758e-25)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = -60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsFixedJoint "left_finger_tip_joint"
+        {
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/left_finger_base_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/left_finger_tip_link>
+            point3f physics:localPos0 = (0.0365, -0.0145, 0.0003)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, 0.70710677, 6.019223e-17, -5.551115e-17)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "right_inner_proximal_finger_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = 1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/body_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/right_inner_proximal_finger_link>
+            point3f physics:localPos0 = (0.0925, 0, -0.00745)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710677, -0.70710677, 5.551115e-17, 5.551115e-17)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = 60
+            float state:angular:physics:velocity = 0
+        }
+
+        def PhysicsRevoluteJoint "left_inner_proximal_finger_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "NewtonMimicAPI"]
+        )
+        {
+            custom float newton:mimicCoef0 = 0
+            custom float newton:mimicCoef1 = 1
+            custom rel newton:mimicJoint = </onrobot_rg2/Physics/finger_joint>
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </onrobot_rg2/Geometry/body_link>
+            rel physics:body1 = </onrobot_rg2/Geometry/left_inner_proximal_finger_link>
+            point3f physics:localPos0 = (0.0925, 0, 0.00755)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (-0.70710677, -0.70710677, -5.551115e-17, 1.6653345e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -180
+            float physics:upperLimit = 180
+            float state:angular:physics:position = 60
+            float state:angular:physics:velocity = 0
+        }
+    }
+}
+

@@ -5,6 +5,34 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
+from datetime import date
+
+
+def verify_interfaces(manifest):
+    """Check the public consumer contract and its existing package identity."""
+    for model, info in manifest.get('models', {}).items():
+        # Legacy inventories can still be checked during catalog migration.
+        # Canonical SimReady inventories must carry the consumer interface.
+        if 'catalog_packages' not in manifest:
+            continue
+        revision = info.get('interface_revision')
+        if type(revision) is not int or revision < 1:
+            raise ValueError(f'{model}: missing or invalid interface revision')
+        if (info.get('coordinate_dimension'), info.get('coordinate_unit')) not in (
+                ('linear', 'm'), ('angular', 'rad')):
+            raise ValueError(f'{model}: invalid physical coordinate units')
+        catalog = manifest['catalog_packages'][model]
+        match = re.fullmatch(
+            rf'simready\.hf\.[^.]+\.[^.]+\.onrobot_{re.escape(model)}\.'
+            r'(\d{4})\.(\d{2})\.(\d{2})_(\d+)', catalog['package_id'])
+        if not match or int(match[4]) < 1:
+            raise ValueError(f'{model}: invalid SimReady package version')
+        date(*map(int, match.groups()[:3]))
+        if catalog['entrypoint'] != info['entrypoint']:
+            raise ValueError(f'{model}: catalog/model entry points differ')
+        if not info['entrypoint'].startswith(catalog['directory'] + '/simready_usd/'):
+            raise ValueError(f'{model}: entry point is outside its catalog package')
 
 
 def verify_manifest(root):
@@ -24,9 +52,35 @@ def verify_manifest(root):
         raise ValueError('asset file set differs from the manifest')
     for relative, expected in manifest['files'].items():
         path = root / relative
-        if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+        content = path.read_bytes()
+        if content.startswith(b'version https://git-lfs.github.com/spec/v1'):
+            raise ValueError(f'unresolved Git LFS pointer: {relative}')
+        if hashlib.sha256(content).hexdigest() != expected:
             raise ValueError(f'asset checksum mismatch: {relative}')
+    verify_interfaces(manifest)
+    for model, catalog in manifest.get('catalog_packages', {}).items():
+        metadata = catalog['directory'] + '/com.nvidia.simready.packaging.json'
+        if metadata not in manifest['files']:
+            raise ValueError(f'{model}: missing catalog package metadata')
+        if json.loads((root / metadata).read_text())['package_id'] != catalog['package_id']:
+            raise ValueError(f'{model}: package metadata identity differs from manifest')
     return manifest
+
+
+def verify_articulation_roots(stage, expected):
+    """Require one root, including roots inherited from engine schemas."""
+    from pxr import UsdPhysics
+    # NewtonArticulationRootAPI includes PhysicsArticulationRootAPI in Isaac.
+    # Check its token as well, so plain OpenUSD catches misplaced Newton roots
+    # even when that optional schema plugin is not installed.
+    declared = [str(prim.GetPath()) for prim in stage.Traverse()
+                if {'PhysicsArticulationRootAPI', 'NewtonArticulationRootAPI'} &
+                set(prim.GetPrimTypeInfo().GetAppliedAPISchemas())]
+    composed = [str(prim.GetPath()) for prim in stage.Traverse()
+                if prim.HasAPI(UsdPhysics.ArticulationRootAPI)]
+    if declared != [expected] or composed != [expected]:
+        raise ValueError(f'unexpected articulation roots: declared={declared}, composed={composed}')
+    return composed
 
 
 def validate(root, *, manifest_only=False):
@@ -36,7 +90,7 @@ def validate(root, *, manifest_only=False):
               'composition_checked': not manifest_only, 'models': {}}
     if manifest_only:
         return report
-    if set(manifest.get('models', {})) != {'2fg7', '2fg14', 'rg2', 'rg6'}:
+    if not {'2fg7', '2fg14', 'rg2', 'rg6'}.issubset(manifest.get('models', {})):
         raise ValueError('the composed-stage check requires all four model entries')
     from pxr import Usd, UsdGeom, UsdPhysics, UsdUtils
     for model, info in manifest['models'].items():
@@ -54,21 +108,17 @@ def validate(root, *, manifest_only=False):
             raise ValueError(f'{model}: unexpected default prim')
         if UsdGeom.GetStageMetersPerUnit(stage) != 1.0:
             raise ValueError(f'{model}: expected metre units')
-        # In Isaac 6, NewtonArticulationRootAPI includes the USD root API as
-        # a built-in schema. Count directly applied roots for ownership, and
-        # report the composed roots too instead of hiding that distinction.
-        roots = [str(prim.GetPath()) for prim in stage.Traverse()
-                 if 'PhysicsArticulationRootAPI' in
-                 prim.GetPrimTypeInfo().GetAppliedAPISchemas()]
-        composed_roots = [str(prim.GetPath()) for prim in stage.Traverse()
-                          if prim.HasAPI(UsdPhysics.ArticulationRootAPI)]
-        if roots != [info['articulation_root']]:
-            raise ValueError(f'{model}: unexpected articulation roots: {roots}')
+        composed_roots = verify_articulation_roots(stage, info['articulation_root'])
         joint = stage.GetPrimAtPath(info['driven_joint_path'])
         if not joint or not joint.IsA(UsdPhysics.Joint):
             raise ValueError(f'{model}: driven joint is missing')
+        if 'coordinate_dimension' in info:
+            joint_type = (UsdPhysics.PrismaticJoint if info['coordinate_dimension'] == 'linear'
+                          else UsdPhysics.RevoluteJoint)
+            if not joint.IsA(joint_type):
+                raise ValueError(f'{model}: driven joint type differs from its coordinate units')
         report['models'][model] = {'default_prim': info['default_prim'],
-                                   'articulation_root': roots[0],
+                                   'articulation_root': composed_roots[0],
                                    'composed_articulation_roots': composed_roots,
                                    'layers': len(layers)}
     return report
